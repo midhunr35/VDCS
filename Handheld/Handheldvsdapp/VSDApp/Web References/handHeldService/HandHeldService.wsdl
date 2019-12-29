@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:rta="http://com/rta/vsd/schema/RTASchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com/rta/vsd/services/HandHeldService/" xmlns:hh="http://com/rta/vsd/schema/HHSchema" name="HandHeldService" targetNamespace="http://com/rta/vsd/services/HandHeldService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://com/rta/vsd/services/HandHeldService/">
+      <xsd:import schemaLocation="mockHandHeldServiceSOAP?WSDL&amp;interface=HandHeldServiceSOAP&amp;part=WS_Schema.xsd" namespace="http://com/rta/vsd/schema/RTASchema" />
+      <xsd:import schemaLocation="mockHandHeldServiceSOAP?WSDL&amp;interface=HandHeldServiceSOAP&amp;part=HandHeld.xsd" namespace="http://com/rta/vsd/schema/HHSchema" />
+      <xsd:element name="authHeader" type="rta:AuthHeader" />
+      <xsd:element name="inquireCompanyProfile">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="trafficFileNumber" type="xsd:string" />
+            <xsd:element name="tradeLicenseNumber" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireCompanyProfileResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireCompanyProfileResponseItem" type="tns:InquireCompanyProfileResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquireCompanyProfileResponseItem">
+        <xsd:sequence>
+          <xsd:element name="company" type="rta:VehicleOwner" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InquireListOfInterestResponseItem">
+        <xsd:sequence>
+          <xsd:element name="arrayDriversOfInterest" type="hh:ArrayDriversOfInterest" />
+          <xsd:element name="arrayVehicleOfInterest" type="hh:ArrayVehiclesOfInterest" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquireVehicleProfile">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="plate" type="rta:VehiclePlate" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireVehicleProfileResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireVehicleProfileResponseItem" type="tns:InquireVehicleProfileResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquireVehicleProfileResponseItem">
+        <xsd:sequence>
+          <xsd:element name="vehicle" type="rta:Vehicle" />
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element name="violations" type="rta:ArrayInspections" />
+          <xsd:element name="circularDetails" type="hh:ArrayCircularDetails" />
+          <xsd:element name="inspectionInstruction" type="xsd:string" />
+          <xsd:element name="plateConfiscationInstruction" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquireFAQs">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireFAQsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireFAQsResponseItem" type="tns:InquireFAQsResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquireFAQsResponseItem">
+        <xsd:sequence>
+          <xsd:element name="faqs" type="hh:ArrayFAQs" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquireDriverDetails">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="driverLicenseNumber" type="xsd:string" />
+            <xsd:element name="licenseIssuingEmirate" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireDriverDetailsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireDriverDetailsResponseItem" type="tns:InquireDriverDetailsResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="InquireDriverDetailsResponseItem">
+        <xsd:sequence>
+          <xsd:element name="driver" type="rta:VehicleDriver" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="synchronizeConfigData">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="lastSynchDate" type="xsd:dateTime" />
+            <xsd:element name="userCode" type="xsd:string" />
+            <xsd:element name="userName" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="synchronizeConfigDataResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="synchronizeConfigDataResponse" type="tns:SynchronizeConfigDataResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="SynchronizeConfigDataResponseItem">
+        <xsd:sequence>
+          <xsd:element name="location" type="hh:ArrayLocations" />
+          <xsd:element name="defect" type="hh:ArrayDefects" />
+          <xsd:element name="vehicleCategory" type="hh:ArrayVehicleCategories" />
+          <xsd:element name="inspectionYFactor" type="xsd:int" />
+          <xsd:element name="country" type="hh:ArrayCountries" />
+          <xsd:element name="countryProperty" type="hh:ArrayCounryProperties" />
+          <xsd:element name="defectCategory" type="hh:ArrayDefectCategories" />
+          <xsd:element name="DefectProperty" type="hh:ArrayofDefectProperty" />
+          <xsd:element name="severityLevelProperty" type="hh:ArraySeverityLevelProperties" />
+          <xsd:element name="violationSeverityFeeRule" type="hh:ArrayViolationSeverityFeeRules" />
+          <xsd:element name="testType" type="hh:ArrayTestTypes" />
+          <xsd:element name="propertyType" type="hh:ArrayPropertyTypes" />
+          <xsd:element name="propertyValue" type="hh:ArrayPropertyValues" />
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element name="severityLevel" type="hh:ArraySeverityLevels" />
+          <xsd:element name="vehicleCatDefectSeverity" type="hh:ArrayVehicleCategoryDefectSeverity" />
+          <xsd:element name="vehicleCategoryDefectSeverityFine" type="hh:ArrayVehicleCategoryDefectSeverityFine" />
+          <xsd:element name="partnerFine" type="hh:ArrayPartnerFine" />
+          <xsd:element name="partner" type="hh:ArrayPartner" />
+          <xsd:element name="fine" type="hh:ArrayFine" />
+          <xsd:element name="platCodes" type="hh:ArrayVehPlateCatCode" />
+          <xsd:element name="employeeId" type="xsd:string" />
+          <xsd:element name="firstNameEn" type="xsd:string" />
+          <xsd:element name="lastNameEn" type="xsd:string" />
+          <xsd:element name="firstNameAr" type="xsd:string" />
+          <xsd:element name="lastNameAr" type="xsd:string" />
+          <xsd:element name="mobileNumber" type="xsd:string" />
+          <xsd:element name="email" type="xsd:string" />
+          <xsd:element name="designationEn" type="xsd:string" />
+          <xsd:element name="designationAr" type="xsd:string" />
+          <xsd:element name="pictureMimeType" type="xsd:string" />
+          <xsd:element name="picture" type="xsd:base64Binary" />
+          <xsd:element name="authorityCode" type="xsd:string" />
+          <xsd:element name="comments" type="hh:ArrayComments" />
+          <xsd:element name="fuelEmission" type="hh:ArrayFuelEmission" />
+          <xsd:element name="vehicleDevInspectParam" type="hh:ArrayVehicleDevInspectParams" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="submitViolation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="inspection" type="rta:Inspection" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitHandheldLocation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="handheldLocation" type="rta:HandheldLocationInformation" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitOfflineViolationRequestElement">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="inspections" type="rta:ArrayInspections" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitOfflineViolationResponseElement">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="submitOfflineViolationResponse" type="tns:ArraySubmitOfflineViolationResponseItems" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireListOfInterestRequestElement">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="userId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitViolationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="submitViolationResponseItem" type="tns:SubmitViolationResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitHandheldLocationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="submitHandheldLocationResponseItem" type="tns:SubmitHandheldLocationResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireListOfInterestResponseElement">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="listOfInterestResponse" type="tns:InquireListOfInterestResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="SubmitViolationResponseItem">
+        <xsd:sequence>
+          <xsd:element name="savedInspection" type="rta:Inspection" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SubmitHandheldLocationResponseItem">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArraySubmitOfflineViolationResponseItems">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="submitOfflineResponse" type="tns:SubmitOfflineViolationResponseItem" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SubmitOfflineViolationResponseItem">
+        <xsd:sequence>
+          <xsd:element name="savedInspection" type="rta:Inspection" />
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquireInspectorSummaryRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="startDate" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="endDate" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="inspectorId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireInspectorSummaryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireInspectorSummaryResponseItem" type="tns:inquireInspectorSummaryResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="inquireInspectorSummaryResponseItem">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="inspectorList" type="tns:inspectorListType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="inspectorListType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="inspectorSummary" type="tns:inspectorSummaryType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="inspectorSummaryType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="inspectorId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="inspectorUserName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="inspectorName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="inspectorNameArabic" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalInspections" type="xsd:integer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalViolations" type="xsd:integer" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="goodbyeScreenRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="startDate" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="endDate" type="xsd:string" />
+            <xsd:element name="inspectorId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="goodbyeScreenResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="goodbyeScreenResponseItem" type="tns:goodbyeScreenResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="goodbyeScreenResponseItem">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="summary" type="tns:summaryType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="summaryType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalInspectionWithFine" type="xsd:integer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalInspectionWithoutFine" type="xsd:integer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalFineAmout" type="xsd:integer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="totalDefects" type="xsd:integer" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="updateUserProfileCredentials">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="userLoginName" type="xsd:string" />
+            <xsd:element name="userMobileNumber" type="xsd:string" />
+            <xsd:element name="userPicture" type="xsd:string" />
+            <xsd:element name="userPictureType" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateUserProfileCredentialsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="userProfileCredentialResponse" type="tns:userProfileCredentialResponseType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="userProfileCredentialResponseType">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="searchRentalAgency">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="agency" type="rta:RentalAgency" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="searchRentalAgencyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="rentalAgenciesList" type="tns:rentalAgencyResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="rentalAgencyResponse">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element name="rentalAgencies" type="rta:ArrayAgency" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="getRentalAgencyOpenOffense">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="rentalAgencyId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getRentalAgencyOpenOffenseResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getRentalAgencyOpenOffense" type="tns:getRentalAgencyOpenOffenseResponseType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="getRentalAgencyOpenOffenseResponseType">
+        <xsd:sequence>
+          <xsd:element name="response" type="rta:Response" />
+          <xsd:element name="agency" type="rta:Agency" />
+          <xsd:element name="openOffenses" type="rta:ArrayOpenOffense" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="synchronizeDefectAttachments">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="violationArray" type="rta:ArrayViolations" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="synchronizeDefectAttachmentsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="synchronizeDefectAttachmentsResponse" type="tns:SynchronizeDefectAttachmentsResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="SynchronizeDefectAttachmentsResponseItem">
+        <xsd:sequence>
+          <xsd:element name="reponse" type="rta:Response" />
+          <xsd:element name="listViolationIds" type="rta:ArrayViolationIds" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="inquireVehicleProfileFromETraffic">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="plate" type="rta:VehiclePlate" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireVehicleProfileFromETrafficResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="inquireVehicleProfileResponseItem" type="tns:InquireVehicleProfileResponseItem" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inquireDriverDetailsRequest">
+    <wsdl:part name="parameters" element="tns:inquireDriverDetails" />
+  </wsdl:message>
+  <wsdl:message name="synchronizeDefectAttachmentsRequest">
+    <wsdl:part name="parameters" element="tns:synchronizeDefectAttachments" />
+  </wsdl:message>
+  <wsdl:message name="goodbyeScreenResponseMessage">
+    <wsdl:part name="parameters" element="tns:goodbyeScreenResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireFAQsResponse">
+    <wsdl:part name="parameters" element="tns:inquireFAQsResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireCompanyProfileRequest">
+    <wsdl:part name="parameters" element="tns:inquireCompanyProfile" />
+  </wsdl:message>
+  <wsdl:message name="updateUserProfileCredentialsResponse">
+    <wsdl:part name="parameters" element="tns:updateUserProfileCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthRequestHeader">
+    <wsdl:part name="passwordHeader" element="tns:authHeader" />
+  </wsdl:message>
+  <wsdl:message name="inquireVehicleProfileFromETrafficRequest">
+    <wsdl:part name="parameters" element="tns:inquireVehicleProfileFromETraffic" />
+  </wsdl:message>
+  <wsdl:message name="inquireInspectorSummaryResponseMessage">
+    <wsdl:part name="parameters" element="tns:inquireInspectorSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitOffileViolationRequestMessage">
+    <wsdl:part name="parameters" element="tns:submitOfflineViolationRequestElement" />
+  </wsdl:message>
+  <wsdl:message name="getRentalAgencyOpenOffenseRequest">
+    <wsdl:part name="parameters" element="tns:getRentalAgencyOpenOffense" />
+  </wsdl:message>
+  <wsdl:message name="synchronizeConfigDataResponse">
+    <wsdl:part name="parameters" element="tns:synchronizeConfigDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitOfflineViolationResponseMessage">
+    <wsdl:part name="parameters" element="tns:submitOfflineViolationResponseElement" />
+  </wsdl:message>
+  <wsdl:message name="inquireVehicleProfileRequest">
+    <wsdl:part name="parameters" element="tns:inquireVehicleProfile" />
+  </wsdl:message>
+  <wsdl:message name="inquireCompanyProfileResponse">
+    <wsdl:part name="parameters" element="tns:inquireCompanyProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitHandheldLocationResponse">
+    <wsdl:part name="parameters" element="tns:submitHandheldLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireListOfInterestRequestMessage">
+    <wsdl:part name="parameters" element="tns:inquireListOfInterestRequestElement" />
+  </wsdl:message>
+  <wsdl:message name="searchRentalAgencyResponse">
+    <wsdl:part name="parameters" element="tns:searchRentalAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireVehicleProfileResponse">
+    <wsdl:part name="parameters" element="tns:inquireVehicleProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireVehicleProfileFromETrafficResponse">
+    <wsdl:part name="parameters" element="tns:inquireVehicleProfileFromETrafficResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitViolationRequest">
+    <wsdl:part name="parameters" element="tns:submitViolation" />
+  </wsdl:message>
+  <wsdl:message name="updateUserProfileCredentialsRequest">
+    <wsdl:part name="parameters" element="tns:updateUserProfileCredentials" />
+  </wsdl:message>
+  <wsdl:message name="synchronizeConfigDataRequest">
+    <wsdl:part name="parameters" element="tns:synchronizeConfigData" />
+  </wsdl:message>
+  <wsdl:message name="searchRentalAgencyRequest">
+    <wsdl:part name="parameters" element="tns:searchRentalAgency" />
+  </wsdl:message>
+  <wsdl:message name="inquireListOfInterestResponseMessage">
+    <wsdl:part name="parameters" element="tns:inquireListOfInterestResponseElement" />
+  </wsdl:message>
+  <wsdl:message name="getRentalAgencyOpenOffenseResponse">
+    <wsdl:part name="parameters" element="tns:getRentalAgencyOpenOffenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="inquireInspectorSummaryRequestMessage">
+    <wsdl:part name="parameters" element="tns:inquireInspectorSummaryRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitHandheldLocationRequest">
+    <wsdl:part name="parameters" element="tns:submitHandheldLocation" />
+  </wsdl:message>
+  <wsdl:message name="inquireFAQsRequest">
+    <wsdl:part name="parameters" element="tns:inquireFAQs" />
+  </wsdl:message>
+  <wsdl:message name="submitViolationResponse">
+    <wsdl:part name="parameters" element="tns:submitViolationResponse" />
+  </wsdl:message>
+  <wsdl:message name="synchronizeDefectAttachmentsResponse">
+    <wsdl:part name="parameters" element="tns:synchronizeDefectAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="goodbyeScreenRequestMessage">
+    <wsdl:part name="parameters" element="tns:goodbyeScreenRequest" />
+  </wsdl:message>
+  <wsdl:message name="inquireDriverDetailsResponse">
+    <wsdl:part name="parameters" element="tns:inquireDriverDetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HandHeldServicePortType">
+    <wsdl:operation name="inquireCompanyProfile">
+      <wsdl:input message="tns:inquireCompanyProfileRequest" />
+      <wsdl:output message="tns:inquireCompanyProfileResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireVehicleProfile">
+      <wsdl:input message="tns:inquireVehicleProfileRequest" />
+      <wsdl:output message="tns:inquireVehicleProfileResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireDriverDetails">
+      <wsdl:input message="tns:inquireDriverDetailsRequest" />
+      <wsdl:output message="tns:inquireDriverDetailsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="synchronizeConfigData">
+      <wsdl:input message="tns:synchronizeConfigDataRequest" />
+      <wsdl:output message="tns:synchronizeConfigDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="submitViolation">
+      <wsdl:input message="tns:submitViolationRequest" />
+      <wsdl:output message="tns:submitViolationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="submitHandheldLocation">
+      <wsdl:input message="tns:submitHandheldLocationRequest" />
+      <wsdl:output message="tns:submitHandheldLocationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="submitOfflineViolation">
+      <wsdl:input message="tns:submitOffileViolationRequestMessage" />
+      <wsdl:output message="tns:submitOfflineViolationResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireListOfInterest">
+      <wsdl:input message="tns:inquireListOfInterestRequestMessage" />
+      <wsdl:output message="tns:inquireListOfInterestResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireInspectorSummary">
+      <wsdl:input message="tns:inquireInspectorSummaryRequestMessage" />
+      <wsdl:output message="tns:inquireInspectorSummaryResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="goodbyeScreen">
+      <wsdl:input message="tns:goodbyeScreenRequestMessage" />
+      <wsdl:output message="tns:goodbyeScreenResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateUserProfileCredentials">
+      <wsdl:input message="tns:updateUserProfileCredentialsRequest" />
+      <wsdl:output message="tns:updateUserProfileCredentialsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchRentalAgency">
+      <wsdl:input message="tns:searchRentalAgencyRequest" />
+      <wsdl:output message="tns:searchRentalAgencyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getRentalAgencyOpenOffense">
+      <wsdl:input message="tns:getRentalAgencyOpenOffenseRequest" />
+      <wsdl:output message="tns:getRentalAgencyOpenOffenseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="synchronizeDefectAttachments">
+      <wsdl:input message="tns:synchronizeDefectAttachmentsRequest" />
+      <wsdl:output message="tns:synchronizeDefectAttachmentsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireVehicleProfileFromETraffic">
+      <wsdl:input message="tns:inquireVehicleProfileFromETrafficRequest" />
+      <wsdl:output message="tns:inquireVehicleProfileFromETrafficResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HandHeldServiceSOAP" type="tns:HandHeldServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getRentalAgencyOpenOffense">
+      <soap:operation soapAction="http://com/rta/vsd/services/HandHeldService/getRentalAgencyOpenOffense" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchRentalAgency">
+      <soap:operation soapAction="http://com/rta/vsd/services/HandHeldService/searchRentalAgency" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireCompanyProfile">
+      <soap:operation soapAction="http://com/rta/vsd/services/HandHeldService/inquireCompanyProfile" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireVehicleProfile">
+      <soap:operation soapAction="inquireVehicleProfile" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireDriverDetails">
+      <soap:operation soapAction="inquireDriverDetails" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="synchronizeConfigData">
+      <soap:operation soapAction="synchronizeConfigData" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitViolation">
+      <soap:operation soapAction="submitViolation" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitHandheldLocation">
+      <soap:operation soapAction="submitHandheldLocation" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitOfflineViolation">
+      <soap:operation soapAction="submitOfflineViolation" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireListOfInterest">
+      <soap:operation soapAction="inquireListOfInterest" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireInspectorSummary">
+      <soap:operation soapAction="inquireInspectorSummary" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUserProfileCredentials">
+      <soap:operation soapAction="updateUserProfileCredentials" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="goodbyeScreen">
+      <soap:operation soapAction="goodbyeScreen" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="synchronizeDefectAttachments">
+      <soap:operation soapAction="synchronizeDefectAttachments" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireVehicleProfileFromETraffic">
+      <soap:operation soapAction="inquireVehicleProfileFromETraffic" />
+      <wsdl:input>
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HandHeldService">
+    <wsdl:documentation>Dated: 19th November,2015. This Service is used to record violations in VSD</wsdl:documentation>
+    <wsdl:port name="HandHeldServicePort" binding="tns:HandHeldServiceSOAP">
+      <soap:address location="http://172.17.85.2/HHService/HandHeldService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

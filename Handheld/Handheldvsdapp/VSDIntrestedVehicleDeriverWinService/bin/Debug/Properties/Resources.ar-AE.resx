@@ -1,0 +1,1148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Area" xml:space="preserve">
+    <value>المنطقة*</value>
+  </data>
+  <data name="BtnBack" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="BtnLogin" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="BtnNext" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="BtnRecordViolation" xml:space="preserve">
+    <value>تسجيل التجاوز</value>
+  </data>
+  <data name="BtnReset" xml:space="preserve">
+    <value>إعادة البحث</value>
+  </data>
+  <data name="BtnSearch" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="BtnSearchVehicleOROperator" xml:space="preserve">
+    <value>بحث عن ملف المركبة/ملف المشغل</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>الدولة*</value>
+  </data>
+  <data name="Emirates" xml:space="preserve">
+    <value>الإمارة *</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>الموقع*</value>
+  </data>
+  <data name="LocationDetails" xml:space="preserve">
+    <value>:تفاصيل الموقع</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="PlateCatogory" xml:space="preserve">
+    <value>فئة اللوحة*</value>
+  </data>
+  <data name="PlateCode" xml:space="preserve">
+    <value>رمز اللوحة*</value>
+  </data>
+  <data name="PlateNumber" xml:space="preserve">
+    <value>رقم اللوحة*</value>
+  </data>
+  <data name="SearchVehicleRecord" xml:space="preserve">
+    <value>البحث عن المركبة</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="VehicleCategory" xml:space="preserve">
+    <value>فئة المركبة*</value>
+  </data>
+  <data name="VehicleDetials" xml:space="preserve">
+    <value>تفاصيل المركبة</value>
+  </data>
+  <data name="VSDApp" xml:space="preserve">
+    <value>نظام سلامة المركبات</value>
+  </data>
+  <data name="WhatDoYouWantToDo" xml:space="preserve">
+    <value>ماذا تريد أن تفعل؟</value>
+  </data>
+  <data name="ChassisNumber" xml:space="preserve">
+    <value>رقم الشاصي*</value>
+  </data>
+  <data name="Inspect" xml:space="preserve">
+    <value>التفتيش</value>
+  </data>
+  <data name="Make" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>الطراز</value>
+  </data>
+  <data name="OperatorName" xml:space="preserve">
+    <value>اسم المشغل*</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>السنة*</value>
+  </data>
+  <data name="InspectionInstruction" xml:space="preserve">
+    <value>تعليمات التفتيش</value>
+  </data>
+  <data name="OpenViolations" xml:space="preserve">
+    <value>التجاوزات الغير مستوفية</value>
+  </data>
+  <data name="Recomendations" xml:space="preserve">
+    <value>التوصيات</value>
+  </data>
+  <data name="VehicleOVRR" xml:space="preserve">
+    <value>تقييم مخاطر مركبات المشغل</value>
+  </data>
+  <data name="ActualValue" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="AddDefectORSafetyViolation" xml:space="preserve">
+    <value>إضافة الأعطال</value>
+  </data>
+  <data name="BtnAdd" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="BtnPrint" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>الفئة*</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="ConfiscationReason" xml:space="preserve">
+    <value>سبب مصادرة لوحات الأرقام</value>
+  </data>
+  <data name="ConfiscationRequired" xml:space="preserve">
+    <value>يجب مصادرة لوحات الأرقام</value>
+  </data>
+  <data name="Defect" xml:space="preserve">
+    <value>العطل</value>
+  </data>
+  <data name="DeriverDetails" xml:space="preserve">
+    <value>بيانات السائق</value>
+  </data>
+  <data name="DriverName" xml:space="preserve">
+    <value>اسم السائق</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>تاريخ الفحص المقرر</value>
+  </data>
+  <data name="LicenseNumber" xml:space="preserve">
+    <value>*رقم الرخصة</value>
+  </data>
+  <data name="OverAllViolationSeverity" xml:space="preserve">
+    <value>درجة خطورة التجاوز</value>
+  </data>
+  <data name="PlateCondition" xml:space="preserve">
+    <value>حالة الوحات</value>
+  </data>
+  <data name="PlateConfiscated" xml:space="preserve">
+    <value>تم مصادرة اللوحات</value>
+  </data>
+  <data name="PlateConfiscation" xml:space="preserve">
+    <value>تفاصيل مصادرة اللوحات</value>
+  </data>
+  <data name="SelectType" xml:space="preserve">
+    <value>اختر النوع*</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>الفئة.فـ*</value>
+  </data>
+  <data name="ViolationID" xml:space="preserve">
+    <value>رقم التجاوز</value>
+  </data>
+  <data name="ViolationSummary" xml:space="preserve">
+    <value>ملخص التجاوز</value>
+  </data>
+  <data name="SelectSearchoption" xml:space="preserve">
+    <value>اختر طريقة البحث</value>
+  </data>
+  <data name="ViewOperatorProfile" xml:space="preserve">
+    <value>عرض بيانات المشغل</value>
+  </data>
+  <data name="ViewVehicleProfile" xml:space="preserve">
+    <value>عرض بيانات المركبة</value>
+  </data>
+  <data name="ViewViolationHistory" xml:space="preserve">
+    <value>عرض التجاوزات السابقة</value>
+  </data>
+  <data name="OperatorOVVRScore" xml:space="preserve">
+    <value>تقييم المشغل</value>
+  </data>
+  <data name="OperatorProfile" xml:space="preserve">
+    <value>بيانات المشغل</value>
+  </data>
+  <data name="SearchOperatorDetails" xml:space="preserve">
+    <value>البحث عن المشغل</value>
+  </data>
+  <data name="TopFiveViolatingVehicles" xml:space="preserve">
+    <value>أكثر خمس مركبات متجاوزة</value>
+  </data>
+  <data name="TrafficeFileNumber" xml:space="preserve">
+    <value>رقم الملف المروري*</value>
+  </data>
+  <data name="SearchBy" xml:space="preserve">
+    <value>البحث عن طريق</value>
+  </data>
+  <data name="SearchViolation" xml:space="preserve">
+    <value>البحث عن التجاوزات</value>
+  </data>
+  <data name="ViolationDetails" xml:space="preserve">
+    <value>تفاصيل التجاوزات</value>
+  </data>
+  <data name="GoodCondition" xml:space="preserve">
+    <value>الحالة جيدة</value>
+  </data>
+  <data name="Majorandoverdue" xml:space="preserve">
+    <value>بليغ وتم تجاوز وقت الفحص المقرر</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="Replaceable" xml:space="preserve">
+    <value>يجب استبدال لوحات الأرقام</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="SafetyViolation" xml:space="preserve">
+    <value>المخالفات المرورية</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>English Language</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>القائمة</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>الشاشة الرئيسية</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>مزامنة البيانات</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>الإنجليزية</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>اختر اللغة</value>
+  </data>
+  <data name="VehicleDetailRecord" xml:space="preserve">
+    <value>تفاصيل المركبة</value>
+  </data>
+  <data name="btnMainMenue" xml:space="preserve">
+    <value>القائمة الرئيسية</value>
+  </data>
+  <data name="lblAppLogout" xml:space="preserve">
+    <value>تسجيل خروج من النظام</value>
+  </data>
+  <data name="lblLoggingIn" xml:space="preserve">
+    <value>يرجى الانتظار، جاري تسجيل الدخول...</value>
+  </data>
+  <data name="LblMessageBoxNotAuthorized" xml:space="preserve">
+    <value>نأسف، يوجد خطأ في الحصول على بيانات ملفك الشخصي</value>
+  </data>
+  <data name="lblPleaseWait" xml:space="preserve">
+    <value>يرجى الانتظار...</value>
+  </data>
+  <data name="lblWouldYouLike" xml:space="preserve">
+    <value>هل تريد تسجيل الخروج من النظام ؟</value>
+  </data>
+  <data name="lblalreadyadded" xml:space="preserve">
+    <value>تم ادخال العطل مسبقاً</value>
+  </data>
+  <data name="lblComprehensivetestexists" xml:space="preserve">
+    <value>Comprehensive test exists</value>
+  </data>
+  <data name="lblDataNotValid" xml:space="preserve">
+    <value>البيانات غير صالحة</value>
+  </data>
+  <data name="lblexistsopenviolation" xml:space="preserve">
+    <value>موجود في المخالفة فتح السابقة</value>
+  </data>
+  <data name="lblSeveritydoesnotexist" xml:space="preserve">
+    <value>لم يتم العثور على درجة الخطورة</value>
+  </data>
+  <data name="lblSearchingVehicle" xml:space="preserve">
+    <value>جاري البحث على بيانات المركبة...</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="MenueOperatorProfile" xml:space="preserve">
+    <value>بيانات المشغل</value>
+  </data>
+  <data name="MenueSearch" xml:space="preserve">
+    <value>قائمة البحث</value>
+  </data>
+  <data name="MenueVehicleProfile" xml:space="preserve">
+    <value>بيانات المركبة</value>
+  </data>
+  <data name="MenueVilationHistory" xml:space="preserve">
+    <value>بيانات التجاوزات السابقة</value>
+  </data>
+  <data name="popupmesag" xml:space="preserve">
+    <value>يجب كتابة أسم المستخدم بأحرف كبيرة</value>
+  </data>
+  <data name="lblSubmitInspection" xml:space="preserve">
+    <value>هل تريد تسجيل عملية التفتيش؟</value>
+  </data>
+  <data name="lblSubmitInspectionMessage" xml:space="preserve">
+    <value>يرجى الانتظار، جاري تسجيل عملية التفتيش...</value>
+  </data>
+  <data name="lblSubmitViolation" xml:space="preserve">
+    <value>هل تريد تسجيل التجاوزات؟</value>
+  </data>
+  <data name="lblSubmitViolationMessage" xml:space="preserve">
+    <value>تسجيل التجاوزات...</value>
+  </data>
+  <data name="lblCloseApplication" xml:space="preserve">
+    <value>إغلاق التطبيق</value>
+  </data>
+  <data name="lblCloseApplicationMessage" xml:space="preserve">
+    <value>هل تود إغلاق النظام؟</value>
+  </data>
+  <data name="lblWouldYouLikeLang" xml:space="preserve">
+    <value>يرجى العلم بأن تغيير اللغة سيؤدي إلى تسجيل الخروج من النظام، هل تريد المتابعة؟</value>
+  </data>
+  <data name="OperatorName2" xml:space="preserve">
+    <value>اسم المشغل</value>
+  </data>
+  <data name="lblOVVRRating" xml:space="preserve">
+    <value>تقييم مخاطر مركبات المشغل</value>
+  </data>
+  <data name="VehicleNotFound" xml:space="preserve">
+    <value>نأسف، لم يتم العثور على بيانات المركبة</value>
+  </data>
+  <data name="DataValidation" xml:space="preserve">
+    <value>التحقق من صحة البيانات</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>استثناء</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+  <data name="SafetyViolationSubmitted" xml:space="preserve">
+    <value>تم تسجيل مخالفات السلامة</value>
+  </data>
+  <data name="Passwordnotentered" xml:space="preserve">
+    <value>!!يرجى إدخال كلمة المرور</value>
+  </data>
+  <data name="PasswordIncorrect" xml:space="preserve">
+    <value>!!نأسف، كلمة المرور المدخلة غير صحيحة</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>الجنسية*</value>
+  </data>
+  <data name="PlateNumber2" xml:space="preserve">
+    <value>رقم اللوحة</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>العطل</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>درجة الخطورة</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="lblForgotUsername" xml:space="preserve">
+    <value>نسيت اسم المستخدم وكلمة السر</value>
+  </data>
+  <data name="lblForgotUsernameMessage" xml:space="preserve">
+    <value>الخاصية غير مفعلة</value>
+  </data>
+  <data name="PlateDetails" xml:space="preserve">
+    <value>بيانات لوحة الارقام</value>
+  </data>
+  <data name="RiskRating" xml:space="preserve">
+    <value>تقييم المخاطر</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="CancelThreadMessage" xml:space="preserve">
+    <value>يرجى الانتظار، جاري إلغاء العملية...</value>
+  </data>
+  <data name="lblTicketConfirmation" xml:space="preserve">
+    <value>هل تريد طباعة الإخطار؟</value>
+  </data>
+  <data name="TitlePermissionWindow" xml:space="preserve">
+    <value>نظام سلامة المركبات</value>
+  </data>
+  <data name="ChassisNumber2" xml:space="preserve">
+    <value>رقم الشاصي</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>رقم التجاوز</value>
+  </data>
+  <data name="IssueDate" xml:space="preserve">
+    <value>تاريخ الإصدار</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الوضع</value>
+  </data>
+  <data name="lblInspectionConfirmationMessage" xml:space="preserve">
+    <value>هل تريد الاستمرار في التفتيش في نفس الموقع </value>
+  </data>
+  <data name="SubCategory2" xml:space="preserve">
+    <value>الفئة الفرعية</value>
+  </data>
+  <data name="SelectLanguage2" xml:space="preserve">
+    <value>لغة الطباعة</value>
+  </data>
+  <data name="Printing" xml:space="preserve">
+    <value>طباعة الإخطار</value>
+  </data>
+  <data name="DefectSummary" xml:space="preserve">
+    <value>ملخص العطل</value>
+  </data>
+  <data name="lblCurrentScore" xml:space="preserve">
+    <value>بك النتيجة الحالية</value>
+  </data>
+  <data name="lblTargetScore" xml:space="preserve">
+    <value>الهدف نقاط</value>
+  </data>
+  <data name="lblWelCome" xml:space="preserve">
+    <value>يا مرحبا الساع</value>
+  </data>
+  <data name="lblGetMore" xml:space="preserve">
+    <value>الحصول على 219 أكثر بضربه</value>
+  </data>
+  <data name="lblPlaceScore" xml:space="preserve">
+    <value>أول مكان نقاط</value>
+  </data>
+  <data name="lblGoodBye" xml:space="preserve">
+    <value>شكراً لمجهودك</value>
+  </data>
+  <data name="lblTotalVehicleInspected" xml:space="preserve">
+    <value>إجمالي عمليات التفتيش</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="Finesamounts" xml:space="preserve">
+    <value>قيمة المخالفات</value>
+  </data>
+  <data name="Brake" xml:space="preserve">
+    <value>نظام الفرامل</value>
+  </data>
+  <data name="Enginecompartmentanddriveline" xml:space="preserve">
+    <value>غرفة المحرك ونواقل الحركة</value>
+  </data>
+  <data name="Lighting" xml:space="preserve">
+    <value>الأنوار</value>
+  </data>
+  <data name="Modifiedvehicles" xml:space="preserve">
+    <value>المركبات المعدلة</value>
+  </data>
+  <data name="Roadsafetyrequirements" xml:space="preserve">
+    <value>متطلبات السلامة</value>
+  </data>
+  <data name="SteeringandSuspension" xml:space="preserve">
+    <value>نظام المقود والتعليق</value>
+  </data>
+  <data name="VehicleIdentificationNumber" xml:space="preserve">
+    <value>الأرقام التعريفية للقاعدة</value>
+  </data>
+  <data name="Wheelandtires" xml:space="preserve">
+    <value>الإطارات</value>
+  </data>
+  <data name="BodyCondition" xml:space="preserve">
+    <value>بدن المركبة</value>
+  </data>
+  <data name="Inspect2" xml:space="preserve">
+    <value> التفتيش</value>
+  </data>
+  <data name="ErrorBusiness" xml:space="preserve">
+    <value>نأسف يوجد خطأ فني في النظام، يرجى التواصل مع فريق الدعم الفني</value>
+  </data>
+  <data name="ErrorException" xml:space="preserve">
+    <value>نأسف يوجد خطأ استثنائي في النظام، يرجى التواصل مع فريق الدعم الفني</value>
+  </data>
+  <data name="ErrorNotFound" xml:space="preserve">
+    <value>!! لم يتم العثور على البيانات المطلوبة</value>
+  </data>
+  <data name="lblAlwaysReme" xml:space="preserve">
+    <value>وتذكر دائم</value>
+  </data>
+  <data name="lblInspectionResult" xml:space="preserve">
+    <value>نتيجة التفتيش</value>
+  </data>
+  <data name="lblSelectOption" xml:space="preserve">
+    <value>قائمة الإختيارات</value>
+  </data>
+  <data name="lblCreativity" xml:space="preserve">
+    <value>الإبداع .. هو النظر إلى المألوف بطريقة غير مألوفة</value>
+  </data>
+  <data name="offlinedata" xml:space="preserve">
+    <value>تم تخزين عمليات التفتيش بقاعدة البيانات الداخلية، يرجى مزامنة البيانات لاحقاً</value>
+  </data>
+  <data name="UnableToStoreLocalData" xml:space="preserve">
+    <value>!!نأسف، لا يمكن تخزين البيانات</value>
+  </data>
+  <data name="ComentsToolTip" xml:space="preserve">
+    <value>مسموح بكتابة 85 حرف كحد أقصى</value>
+  </data>
+  <data name="OfflineViolation" xml:space="preserve">
+    <value>التجاوزات المخزنة</value>
+  </data>
+  <data name="VRRScore" xml:space="preserve">
+    <value>تقييم مخاطر المركبة</value>
+  </data>
+  <data name="InspectionNotRecomended" xml:space="preserve">
+    <value>لا ننصح بإجراء تفتيش على هذه المركبة</value>
+  </data>
+  <data name="InspectionRecomended" xml:space="preserve">
+    <value>ينصح بإجراء تفتيش على هذه المركبة</value>
+  </data>
+  <data name="ImpoundGracePeriod" xml:space="preserve">
+    <value>فترة السماح مدتها 24 ساعة</value>
+  </data>
+  <data name="Impounding" xml:space="preserve">
+    <value>الحجز</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>الأميال</value>
+  </data>
+  <data name="Ammount" xml:space="preserve">
+    <value>القيمة</value>
+  </data>
+  <data name="Fine" xml:space="preserve">
+    <value>المخالفة</value>
+  </data>
+  <data name="TechnicalFines" xml:space="preserve">
+    <value>المخالفات الفنية</value>
+  </data>
+  <data name="TelematicsFines" xml:space="preserve">
+    <value>مخالفات الرقابة عن بعد</value>
+  </data>
+  <data name="lblSendingLocation" xml:space="preserve">
+    <value>يتم إرسال موقع الجهاز</value>
+  </data>
+  <data name="lblDriverName" xml:space="preserve">
+    <value>الإسم</value>
+  </data>
+  <data name="lblIntrestedVehicleUpdatedTime" xml:space="preserve">
+    <value>توقيت إجراء أخر تحديث لقائمة الاستهداف الذكي</value>
+  </data>
+  <data name="lblIntrestedVehicleNotFound" xml:space="preserve">
+    <value>نأسف، لم يتم العثور على قائمة الاستهداف الذكي</value>
+  </data>
+  <data name="DueDate2" xml:space="preserve">
+    <value>تاريخ فحص الأعطال</value>
+  </data>
+  <data name="NoTestRequired" xml:space="preserve">
+    <value>لا يتوجب فحص</value>
+  </data>
+  <data name="DefectImgCount" xml:space="preserve">
+    <value>يرجى العلم، تم التقاط صورتين مسبقاً لهذا العطل، مسموح بصورتين فقط للعطل الواحد</value>
+  </data>
+  <data name="DefImgDelConfirmation" xml:space="preserve">
+    <value>هل تريد حذف هذه الصورة؟</value>
+  </data>
+  <data name="DefImgSaveConfirmation" xml:space="preserve">
+    <value>هل تريد حفظ هذه الصورة؟</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>معلومات</value>
+  </data>
+  <data name="IsHazard" xml:space="preserve">
+    <value>مركبة نقل مواد خطرة</value>
+  </data>
+  <data name="ScreenChangeConfirmation" xml:space="preserve">
+    <value>هل تريد مغادرة هذه الشاشة؟</value>
+  </data>
+  <data name="TakeDefectImage" xml:space="preserve">
+    <value>التقط صورة</value>
+  </data>
+  <data name="VehHistory" xml:space="preserve">
+    <value>سجلات المركبة السابقة</value>
+  </data>
+  <data name="lblDefectInfoMissing" xml:space="preserve">
+    <value>المعلومات عن العطل ناقصة</value>
+  </data>
+  <data name="meneOperatorSearch" xml:space="preserve">
+    <value>االبحث عن مشغل</value>
+  </data>
+  <data name="menueInspection" xml:space="preserve">
+    <value>التفتيش</value>
+  </data>
+  <data name="menueIntellegentTargeting" xml:space="preserve">
+    <value>الاستهداف الذكي</value>
+  </data>
+  <data name="menueKnowledg" xml:space="preserve">
+    <value>قاعدة المعرفة</value>
+  </data>
+  <data name="menueSync" xml:space="preserve">
+    <value>مزامنة</value>
+  </data>
+  <data name="menueVehicleSearch" xml:space="preserve">
+    <value>البحث عن مركبة</value>
+  </data>
+  <data name="menueViolation" xml:space="preserve">
+    <value>التجاوز</value>
+  </data>
+  <data name="welcomTextBlock1" xml:space="preserve">
+    <value>أهلا بكم في
+نظام سلامة المركبات </value>
+  </data>
+  <data name="welcomTextBlock2" xml:space="preserve">
+    <value>يتم إنشاء ملف للمركبات في 
+نظام سلامة المركبات للمركبات 
+المسجلة في إمارة دبي شرط أن تكون (مركبة تجاري
+ة، وغير حكومية) 
+ويكون صنفها مركبة ثقيلة أو مقطورة
+
+يتم إنشاء ملف للمركبة
+
+عند حدوث على الأقل واحدة من الأحداث التالية عليها:
+
+
+•) عملية تفتيش ميداني
+•) تجاوز عن طريق الرقابة عن بُعد
+•) عملية فحص بمراكز الفحص الفني</value>
+  </data>
+  <data name="RTAVSDApplication" xml:space="preserve">
+    <value>نظام سلامة المركبات</value>
+  </data>
+  <data name="Fillintherequiredinformation" xml:space="preserve">
+    <value>يرجى إدخال البيانات المطلوبة</value>
+  </data>
+  <data name="gettingInspectors" xml:space="preserve">
+    <value>جاري الاستعلام عن بيانات ملفك الشخصي...</value>
+  </data>
+  <data name="SearchingViolationHistory" xml:space="preserve">
+    <value>جاري البحث على بيانات التجاوزات السابقة...</value>
+  </data>
+  <data name="GoodByeQuote1" xml:space="preserve">
+    <value>"الإبتكار هو أن تكون أو لا تكون: أنا حكومة مبتكرة، إذن أنا حكومة موجودة"</value>
+  </data>
+  <data name="GoodByeQuote2" xml:space="preserve">
+    <value>" لا تمارس عملك كموظف، بل مارسه كقائد يحب وطنه، وكصانع يعشق صنعته، وكفنان يبدع فنه"</value>
+  </data>
+  <data name="GoodByeQuote3" xml:space="preserve">
+    <value>صاحب السمو الشيخ محمد بن راشد آل مكتوم</value>
+  </data>
+  <data name="DRRScore" xml:space="preserve">
+    <value>تقييم مخاطر السائق</value>
+  </data>
+  <data name="FineAmount" xml:space="preserve">
+    <value>قيمة المخالفة</value>
+  </data>
+  <data name="goodByScreenErrMsg" xml:space="preserve">
+    <value>نأسف يوجد عطل في شبكة الاتصال، لا يمكن الحصول على البيانات المطلوبة</value>
+  </data>
+  <data name="goodByScreenMsg" xml:space="preserve">
+    <value>لن يتم احتساب بيانات التفتيش المخزنة داخلياً على اجهزة التفتيش الاخرى</value>
+  </data>
+  <data name="InspectionWithFine" xml:space="preserve">
+    <value>تفتيش مع مخالفات</value>
+  </data>
+  <data name="InspectionWithoutFine" xml:space="preserve">
+    <value>تفتيش بدون مخالفات</value>
+  </data>
+  <data name="synchAndGetInspData" xml:space="preserve">
+    <value>جاري مزامنة وتحديث بيانات التفتيش...</value>
+  </data>
+  <data name="TotalViolations" xml:space="preserve">
+    <value>عدد الأعطال</value>
+  </data>
+  <data name="menueImpounding" xml:space="preserve">
+    <value>شاشة الحجز</value>
+  </data>
+  <data name="TotalInspection" xml:space="preserve">
+    <value>عدد عمليات التفتيش</value>
+  </data>
+  <data name="lblSearchingDriver" xml:space="preserve">
+    <value>يرجى الانتظار، جاري البحث عن بيانات السائق..</value>
+  </data>
+  <data name="lblProblemInFetchingInscInfo" xml:space="preserve">
+    <value>نأسف، يوجد خطأ في الحصول على بيانات ملفك الشخصي</value>
+  </data>
+  <data name="OVRRODRRScore" xml:space="preserve">
+    <value>OVRR ODRR</value>
+  </data>
+  <data name="lblPrintConfirmation" xml:space="preserve">
+    <value>هل تريد الاستمرار من غير طباعة؟ </value>
+  </data>
+  <data name="ODRR" xml:space="preserve">
+    <value>تقييم مخاطر سائقين المشغل</value>
+  </data>
+  <data name="OVRR" xml:space="preserve">
+    <value>تقييم مخاطر مركبات المشغل</value>
+  </data>
+  <data name="NoDevicesDetected" xml:space="preserve">
+    <value>نأسف، لا يمكن العثور على كاميرا على الجهاز </value>
+  </data>
+  <data name="CameraError" xml:space="preserve">
+    <value>نأسف، يوجد خطأ في تشغيل الكاميرا.</value>
+  </data>
+  <data name="ImageFail" xml:space="preserve">
+    <value>نأسف، لا يمكن حفظ الصورة، يرجى التواصل مع فريق الدعم</value>
+  </data>
+  <data name="ImageSuccess" xml:space="preserve">
+    <value>تم حفظ الصورة بنجاح لهذا العطل</value>
+  </data>
+  <data name="lblSearchOperator" xml:space="preserve">
+    <value>جاري البحث عن بيانات المشغل...</value>
+  </data>
+  <data name="lblDesigination" xml:space="preserve">
+    <value>لقب</value>
+  </data>
+  <data name="lblDesiginationAr" xml:space="preserve">
+    <value> (لقب(بالعربية</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value> البريد الإلكتروني</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>الإسم الأول</value>
+  </data>
+  <data name="lblFirstNameAr" xml:space="preserve">
+    <value> (الاسم الأول (بالعربية</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="lblLastNameAr" xml:space="preserve">
+    <value> (اسم العائلة (بالعربية</value>
+  </data>
+  <data name="lblMobileNumber" xml:space="preserve">
+    <value> رقم الموبايل</value>
+  </data>
+  <data name="lblProfileManagment" xml:space="preserve">
+    <value>إدارة الملف الشخصي</value>
+  </data>
+  <data name="lblRTAEmployeeNumber" xml:space="preserve">
+    <value> رقم موظف هيئة الطرق والمواصلات</value>
+  </data>
+  <data name="lblPicFormat" xml:space="preserve">
+    <value>صورة البروفايل (jpg, .jpeg, .png.) دقة الصورة القصوى:300*300</value>
+  </data>
+  <data name="btnRemove" xml:space="preserve">
+    <value>احذف</value>
+  </data>
+  <data name="btnSelect" xml:space="preserve">
+    <value>اختار</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>حدث</value>
+  </data>
+  <data name="lblPicWarning" xml:space="preserve">
+    <value>دقة الصورة القصوى لصورة البروفايل هي 1000*1000. يرجى تغيير الصورة.</value>
+  </data>
+  <data name="lblUpdatingUserAccount" xml:space="preserve">
+    <value>يرجى الانتظار، يتم تحديث معلومات حساب المستخدم</value>
+  </data>
+  <data name="lblMobileNumberValidation" xml:space="preserve">
+    <value>يرجى إدخال رقم الجوال</value>
+  </data>
+  <data name="lblMobileNumberNumbericValidation" xml:space="preserve">
+    <value>يجب على رقم الجوال أن يكون أرقاماً فقط</value>
+  </data>
+  <data name="lblComercialActivityOption" xml:space="preserve">
+    <value>التفتش على الأنشطة التجارية</value>
+  </data>
+  <data name="menueComercialActivity" xml:space="preserve">
+    <value>التفتش على الأنشطة التجارية</value>
+  </data>
+  <data name="menueProvisionalInspection" xml:space="preserve">
+    <value>الإطلاع على التفتيشات المسجلة</value>
+  </data>
+  <data name="menueRecordInspection" xml:space="preserve">
+    <value>تسجيل التفتيش</value>
+  </data>
+  <data name="lblAgencyName" xml:space="preserve">
+    <value>اسم المكتب</value>
+  </data>
+  <data name="lblArea" xml:space="preserve">
+    <value>حسب المنطقة</value>
+  </data>
+  <data name="lblCarRentalAgencySearch" xml:space="preserve">
+    <value>البحت عن مكتب تأجير السيارات</value>
+  </data>
+  <data name="lblTFN" xml:space="preserve">
+    <value>حسب البيانات</value>
+  </data>
+  <data name="lblTradeLicenseNo" xml:space="preserve">
+    <value>رقم الرخصة التجارية</value>
+  </data>
+  <data name="lblTrafficFileNo" xml:space="preserve">
+    <value>رقم الملف المروري</value>
+  </data>
+  <data name="lblAgencyNameValidation" xml:space="preserve">
+    <value>المرجو إدخال إسم المكتب</value>
+  </data>
+  <data name="lblAreaValidation" xml:space="preserve">
+    <value>يرجى اختيار المنطقة</value>
+  </data>
+  <data name="lblLocationValidation" xml:space="preserve">
+    <value>يرجى اختيار الموقع</value>
+  </data>
+  <data name="lblTradeLicNoValidation" xml:space="preserve">
+    <value>المرجو إدخال رقم الرخصة التجارية</value>
+  </data>
+  <data name="lblTrafficFileNoValidation" xml:space="preserve">
+    <value>المرجو إدخال رقم الملف المروري</value>
+  </data>
+  <data name="lblSearchingRentalAgency" xml:space="preserve">
+    <value>البحت عن مكتب تأجير المركبات</value>
+  </data>
+  <data name="lblClass" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="lblLastinspectionDate" xml:space="preserve">
+    <value>تاريخ أخر تفتيش</value>
+  </data>
+  <data name="lblInspectionRecomendation" xml:space="preserve">
+    <value>ينصح التفتيش</value>
+  </data>
+  <data name="btnStartInspection" xml:space="preserve">
+    <value>إبدأ التفتيش</value>
+  </data>
+  <data name="btnViewInspectionHistory" xml:space="preserve">
+    <value>تصفح سجل التفتيشات</value>
+  </data>
+  <data name="lblSearchResults" xml:space="preserve">
+    <value>نتائج البحت</value>
+  </data>
+  <data name="lblAgencyInformation" xml:space="preserve">
+    <value>معلومات ١لمكتب</value>
+  </data>
+  <data name="lblInspectionInformation" xml:space="preserve">
+    <value>معلومات التفتيش</value>
+  </data>
+  <data name="lblOpenOffenses" xml:space="preserve">
+    <value>التجاوزات غير مستوفية</value>
+  </data>
+  <data name="ldlOffencesFines" xml:space="preserve">
+    <value>التجاوزات و المخالفات</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="lblTradeLicExpiry" xml:space="preserve">
+    <value>تاريخ إنتهاء الرخصة</value>
+  </data>
+  <data name="btnNewSearch" xml:space="preserve">
+    <value>بحت جديد</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>اختار</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="lblPhoneNo" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Area2" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="lblContractualInformation" xml:space="preserve">
+    <value>معلومات العقود</value>
+  </data>
+  <data name="lblFollowup" xml:space="preserve">
+    <value>التتبع بعد</value>
+  </data>
+  <data name="lblGeneralRemarks" xml:space="preserve">
+    <value>ملاحظات عامه</value>
+  </data>
+  <data name="lblNoofauditedcontracts" xml:space="preserve">
+    <value>عدد العقود المدققة</value>
+  </data>
+  <data name="lblNoofavailablevehicles" xml:space="preserve">
+    <value>عدد المركبات المتوفرة</value>
+  </data>
+  <data name="lblNoofcontracts" xml:space="preserve">
+    <value>عدد العقود</value>
+  </data>
+  <data name="lblNooflentvehicles" xml:space="preserve">
+    <value>عدد المركبات االمعارة</value>
+  </data>
+  <data name="lblNoofrentedvehicles" xml:space="preserve">
+    <value>عدد المركبات المستأجرة</value>
+  </data>
+  <data name="lblNoofvehiclesundermaintenance" xml:space="preserve">
+    <value>عدد المركبات تحت الصيانة</value>
+  </data>
+  <data name="lblNoofvehicleswithexpiredregistration" xml:space="preserve">
+    <value>عدد المركبات المنتهية االملكية</value>
+  </data>
+  <data name="lblNoofvehicleswithoutrevenue" xml:space="preserve">
+    <value>عدد المركبات بدون عائد</value>
+  </data>
+  <data name="lblOn" xml:space="preserve">
+    <value>بتاريخ</value>
+  </data>
+  <data name="lblPercentageofauditedcontracts" xml:space="preserve">
+    <value>نسبة التدقيق</value>
+  </data>
+  <data name="lblRentalInformation" xml:space="preserve">
+    <value>معلومات التأجير</value>
+  </data>
+  <data name="lblTotalnumberofvehicles" xml:space="preserve">
+    <value>إجمالي عدد المركبات</value>
+  </data>
+  <data name="Location2" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="lblFollowUpdays" xml:space="preserve">
+    <value>XX يوم</value>
+  </data>
+  <data name="lblUserProfileUpdated" xml:space="preserve">
+    <value>تم تحديت بيانات الملف الشخصي بنجاح</value>
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>المعيار</value>
+  </data>
+  <data name="lblCloseOffence" xml:space="preserve">
+    <value>إغلاق التجاوز</value>
+  </data>
+  <data name="lblIssueDate" xml:space="preserve">
+    <value>تاريخ الاصدار</value>
+  </data>
+  <data name="lblIssueInfraction" xml:space="preserve">
+    <value>إصدار المخالفة</value>
+  </data>
+  <data name="lblOffence" xml:space="preserve">
+    <value>وصف التجاوز</value>
+  </data>
+  <data name="lblAgencyName2" xml:space="preserve">
+    <value>اسم المكتب</value>
+  </data>
+  <data name="lblOpenOffenceValidation" xml:space="preserve">
+    <value>لا يوجد تجاوزات غير مستوفية</value>
+  </data>
+  <data name="RecordOffence" xml:space="preserve">
+    <value>تسجيل التجاوز</value>
+  </data>
+  <data name="Infraction" xml:space="preserve">
+    <value>المخالفات</value>
+  </data>
+  <data name="lblComercialInspctionConfirmation" xml:space="preserve">
+    <value>هل أنت متأكد من إضافة التجاوز؟</value>
+  </data>
+  <data name="lblPleaseSelectOffence" xml:space="preserve">
+    <value>المرجو إختيار تجاوز</value>
+  </data>
+  <data name="lblRecordAlredyExist" xml:space="preserve">
+    <value>أضيف السجل مسبقا</value>
+  </data>
+  <data name="lblAddThorughIssueInfraction" xml:space="preserve">
+    <value>المرجو إضافة التجاوز من خلال جدول التجاوزات غير مستوية</value>
+  </data>
+  <data name="lblVehCatDefectConfirmation" xml:space="preserve">
+    <value>فئة المركبة المختارة لا تحتوي على اعطال. هل تريد الاستمرار؟</value>
+  </data>
+  <data name="lblOfflineViolationForUAEVehicle" xml:space="preserve">
+    <value>لا يسمح بتسجيل مخالفات مؤقتة ضد مركبات غير مسجلة بدولة الإمارات العربية المتحدة</value>
+  </data>
+  <data name="lblInspectionType" xml:space="preserve">
+    <value>نوع التفتيش</value>
+  </data>
+  <data name="lblDeviceInspection" xml:space="preserve">
+    <value>التفتيش بالجهاز</value>
+  </data>
+  <data name="lblRoadSideInspection" xml:space="preserve">
+    <value>التفتيش على حافة الطريق</value>
+  </data>
+  <data name="lblVehSubCat" xml:space="preserve">
+    <value>الفئة الفرعية</value>
+  </data>
+  <data name="lblDimension" xml:space="preserve">
+    <value>الأبعاد</value>
+  </data>
+  <data name="lblEmission" xml:space="preserve">
+    <value>الانبعاثات</value>
+  </data>
+  <data name="lblWeight" xml:space="preserve">
+    <value>الوزن</value>
+  </data>
+  <data name="lblEmissionPerc" xml:space="preserve">
+    <value>الانبعاثات (%)</value>
+  </data>
+  <data name="lblFuelType" xml:space="preserve">
+    <value>نوع الوقود</value>
+  </data>
+  <data name="lblGrossWeight" xml:space="preserve">
+    <value>الوزن الاجمالي</value>
+  </data>
+  <data name="lblHeight" xml:space="preserve">
+    <value>الارتفاع</value>
+  </data>
+  <data name="lblLength" xml:space="preserve">
+    <value>الطول</value>
+  </data>
+  <data name="lblNoOfAxels" xml:space="preserve">
+    <value>عدد المحاور</value>
+  </data>
+  <data name="lblWidth" xml:space="preserve">
+    <value>العرض</value>
+  </data>
+  <data name="lblFail" xml:space="preserve">
+    <value>راسب</value>
+  </data>
+  <data name="lblPass" xml:space="preserve">
+    <value>ناجح</value>
+  </data>
+  <data name="ActualValue2" xml:space="preserve">
+    <value>القيمة الفعلية</value>
+  </data>
+  <data name="ErrorTelematicDefect" xml:space="preserve">
+    <value>Telematics Driver Defect Added</value>
+  </data>
+  <data name="lblSelectAlpr" xml:space="preserve">
+    <value>Select ALPR</value>
+  </data>
+  <data name="lblOfflinDeviceMessage" xml:space="preserve">
+    <value>نأسف يوجد خطأ استثنائي في النظام، يرجى التواصل مع فريق الدعم الفني</value>
+  </data>
+  <data name="registrationExpiry" xml:space="preserve">
+    <value>تاريخ انتهاء التسجيل</value>
+  </data>
+</root>

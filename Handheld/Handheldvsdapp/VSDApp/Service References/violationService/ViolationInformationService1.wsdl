@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://com/rta/vsd/services/ViolationInformationService/" xmlns:sddi="http://com/rta/vsd/schema/SDDISchema" name="ViolationInformationService" targetNamespace="http://com/rta/vsd/services/ViolationInformationService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://com/rta/vsd/services/ViolationInformationService/">
+      <xsd:import schemaLocation="SDDI_Schema.xsd" namespace="http://com/rta/vsd/schema/SDDISchema" />
+      <xsd:element name="authHeader" type="sddi:AuthHeader" />
+      <xsd:element name="inquireViolationById">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="violationId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireViolationByPlate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="plate" type="sddi:VehiclePlate" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireViolationByChassis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestCode" type="xsd:string" />
+            <xsd:element name="chassis" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="inquireViolationResponseElement">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="violations" type="sddi:ArrayInspections" />
+            <xsd:element name="response" type="sddi:Response" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="inquireViolationByPlateRequest">
+    <wsdl:part name="parameters" element="tns:inquireViolationByPlate" />
+  </wsdl:message>
+  <wsdl:message name="inquireViolationByChassisRequest">
+    <wsdl:part name="parameters" element="tns:inquireViolationByChassis" />
+  </wsdl:message>
+  <wsdl:message name="inquireViolationResponse">
+    <wsdl:part name="parameters" element="tns:inquireViolationResponseElement" />
+  </wsdl:message>
+  <wsdl:message name="AuthRequestHeader">
+    <wsdl:part name="passwordHeader" element="tns:authHeader" />
+  </wsdl:message>
+  <wsdl:message name="inquireViolationByIdRequest">
+    <wsdl:part name="parameters" element="tns:inquireViolationById" />
+  </wsdl:message>
+  <wsdl:portType name="ViolationInformationService">
+    <wsdl:operation name="inquireViolationById">
+      <wsdl:input message="tns:inquireViolationByIdRequest" />
+      <wsdl:output message="tns:inquireViolationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireViolationByPlate">
+      <wsdl:input message="tns:inquireViolationByPlateRequest" />
+      <wsdl:output message="tns:inquireViolationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="inquireViolationByChassis">
+      <wsdl:input message="tns:inquireViolationByChassisRequest" />
+      <wsdl:output message="tns:inquireViolationResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ViolationInformationServiceSOAP" type="tns:ViolationInformationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="inquireViolationById">
+      <soap:operation soapAction="inquireViolationById" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireViolationByChassis">
+      <soap:operation soapAction="inquireViolationByChassis" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inquireViolationByPlate">
+      <soap:operation soapAction="inquireViolationByPlate" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AuthRequestHeader" part="passwordHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ViolationInformationService">
+    <wsdl:documentation>Dated: 15th June,2011. This Service is used to query violations from VSD</wsdl:documentation>
+    <wsdl:port name="ViolationInformationServiceSOAP" binding="tns:ViolationInformationServiceSOAP">
+      <soap:address location="http://172.17.85.2/VIService/ViolationInformationService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

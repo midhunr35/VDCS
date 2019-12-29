@@ -1,0 +1,22 @@
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBox.g.cs
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\App.g.cs
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl_MarkupCompile.lref
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\bin\Debug\WPFMessageBoxControl.exe
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\bin\Debug\WPFMessageBoxControl.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\bin\Debug\ar-AE\WPFMessageBoxControl.resources.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\bin\Debug\en-US\WPFMessageBoxControl.resources.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBox.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.Properties.Resources.ar-AE.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.Properties.Resources.en-US.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\ar-AE\WPFMessageBoxControl.resources.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\en-US\WPFMessageBoxControl.resources.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.exe
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.pdb
+C:\RTA New Development\New Device Dev+Dep\Development Backup\06-April-2015\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBox.g.cs
+C:\RTA New Development\New Device Dev+Dep\Development Backup\06-April-2015\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl_MarkupCompile.cache
+C:\RTA New Development\New Device Dev+Dep\Development Backup\06-April-2015\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl_MarkupCompile.lref
+C:\RTA New Development\New Device Dev+Dep\Development Backup\06-April-2015\VSDApp\WPFMessageBoxControl\obj\Debug\WPFMessageBoxControl.exe

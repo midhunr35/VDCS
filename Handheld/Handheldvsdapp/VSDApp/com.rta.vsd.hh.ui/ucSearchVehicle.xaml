@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucSearchVehicle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:properties="clr-namespace:VSDApp.Properties" Background="White"
+              xmlns:extToolkit="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Height="Auto" Width="Auto" Loaded="UserControl_Loaded_1" SizeChanged="UserControl_SizeChanged_1"
+            >
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid >
+        
+        <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5"/>                   
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+        <Label x:Name="lblVehProfile"  Content="{x:Static properties:Resources.MenueVehicleProfile}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="30"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Label x:Name="lblCountry"  HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Content="{x:Static properties:Resources.Country}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxCountry" Grid.Row="3" Grid.Column="3" Style="{StaticResource cmbLargeSize}"  IsEditable="True" IsTextSearchEnabled="True" HorizontalAlignment="Left"  VerticalAlignment="Bottom"  SelectionChanged="cmboxCountry_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxCountry_PreviewKeyDown_1" KeyDown="cmboxCountry_KeyDown_1"/>
+        <Label x:Name="lblEmirate"  HorizontalAlignment="Left" Grid.Row="5" Grid.Column="1" Content="{x:Static properties:Resources.Emirates}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxEmirates" Grid.Row="5" Grid.Column="3" IsEditable="True" IsTextSearchEnabled="True" Style="{StaticResource cmbLargeSize}" HorizontalAlignment="Left"  VerticalAlignment="Bottom" SelectionChanged="cmboxEmirates_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxCountry_PreviewKeyDown_1" KeyDown="cmboxEmirates_KeyDown_1"/>
+        <Label x:Name="lblPlateCateogry" HorizontalAlignment="Left" Grid.Row="7" Grid.Column="1" Content="{x:Static properties:Resources.PlateCatogory}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxPlateCategory" Grid.Row="7" Grid.Column="3" IsEditable="True" IsTextSearchEnabled="True" Style="{StaticResource cmbLargeSize}" HorizontalAlignment="Left"  VerticalAlignment="Bottom" SelectionChanged="cmboxPlateCategory_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxCountry_PreviewKeyDown_1" KeyDown="cmboxPlateCategory_KeyDown_1"/>
+        <Label x:Name="lblPlateNo"  HorizontalAlignment="Left" Grid.Row="9" Grid.Column="1" Content="{x:Static properties:Resources.PlateNumber}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <TextBox x:Name="txtBoxPlateNumber" Grid.Row="9" InputScope="Number" Grid.Column="3" Style="{StaticResource TextBoxLarge}" HorizontalAlignment="Left"  VerticalAlignment="Bottom" TextChanged="txtBoxPlateNumber_TextChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxCountry_PreviewKeyDown_1"/>
+        <Label x:Name="lblPlateCode"  HorizontalAlignment="Left" Grid.Row="11" Grid.Column="1" Content="{x:Static properties:Resources.PlateCode}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxPlateCode" Grid.Row="11" Grid.Column="3" IsEditable="True" IsTextSearchEnabled="True" Style="{StaticResource cmbLargeSize}"  HorizontalAlignment="Left"  VerticalAlignment="Bottom" SelectionChanged="cmboxPlateCode_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxPlateCode_PreviewKeyDown_1" KeyDown="cmboxPlateCode_KeyDown_1"/>
+            <Label x:Name="lblSearchingVehicle" Content="{x:Static properties:Resources.lblSearchingVehicle}"  FontSize="20" FontFamily="Segoe UI" FontWeight="Medium" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden"/>
+
+            <StackPanel x:Name="btnStackePanel" Grid.Row="13" Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Center" 
+                    HorizontalAlignment="Left">
+            <Grid >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnResetVehicleRecord" Visibility="Visible"  Content="{x:Static properties:Resources.BtnBack}" Margin="0,0,0,0" Style="{StaticResource ButtonBackHalfControl}"  Grid.Row="0" Grid.Column="0"  Click="btnResetVehicleRecord_Click_1"/>
+                <Button x:Name="btnSearch" Visibility="Visible"  Margin="10,0,0,0"  Content="{x:Static properties:Resources.BtnSearch}" Style="{StaticResource ButtontoProceedHalfControl}"  Grid.Row="0" Grid.Column="1"  Click="btnSearch_Click_1"/>
+
+
+            <Image x:Name="imagebtnBack" Visibility="Collapsed" Source="..\Images\Buttons\Small\Back.png" Width="150" Grid.Row="15" Grid.Column="3" HorizontalAlignment="Right"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebtnBack_MouseLeftButtonDown_1"  MouseLeftButtonUp="btnResetVehicleRecord_Click_1"  />
+            <Image x:Name="imagebtnSearch" Visibility="Collapsed" Source="..\Images\Buttons\Small\Search.png" Width="150" Grid.Row="7" Grid.Column="7" Margin="40 0 0 0"   HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebtnSearch_MouseLeftButtonDown_1"  MouseLeftButtonUp="btnSearch_Click_1"  />
+            
+            </Grid>
+            </StackPanel>
+        </Grid>
+
+        
+    
+</UserControl>

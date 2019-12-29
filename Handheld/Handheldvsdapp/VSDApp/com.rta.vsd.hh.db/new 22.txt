@@ -1,0 +1,44 @@
+TO DO list :P
+
+
+The connection failed
+ - Connection refused: connect (localhost:389)
+  javax.naming.CommunicationException: localhost:389 [Root exception is java.net.ConnectException: Connection refused: connect]
+	at com.sun.jndi.ldap.Connection.<init>(Connection.java:229)
+	at com.sun.jndi.ldap.LdapClient.<init>(LdapClient.java:149)
+	at com.sun.jndi.ldap.LdapClient.getInstance(LdapClient.java:1621)
+	at com.sun.jndi.ldap.LdapCtx.connect(LdapCtx.java:2711)
+	at com.sun.jndi.ldap.LdapCtx.<init>(LdapCtx.java:329)
+	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(LdapCtxFactory.java:206)
+	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(LdapCtxFactory.java:224)
+	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(LdapCtxFactory.java:167)
+	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(LdapCtxFactory.java:97)
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:696)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:319)
+	at javax.naming.InitialContext.init(InitialContext.java:254)
+	at javax.naming.ldap.InitialLdapContext.<init>(InitialLdapContext.java:165)
+	at org.apache.directory.studio.connection.core.io.jndi.JNDIConnectionWrapper$6.run(JNDIConnectionWrapper.java:872)
+	at org.apache.directory.studio.connection.core.io.jndi.JNDIConnectionWrapper.runAndMonitor(JNDIConnectionWrapper.java:1272)
+	at org.apache.directory.studio.connection.core.io.jndi.JNDIConnectionWrapper.doConnect(JNDIConnectionWrapper.java:914)
+	at org.apache.directory.studio.connection.core.io.jndi.JNDIConnectionWrapper.connect(JNDIConnectionWrapper.java:209)
+	at org.apache.directory.studio.connection.core.jobs.CheckNetworkParameterRunnable.run(CheckNetworkParameterRunnable.java:80)
+	at org.apache.directory.studio.connection.ui.RunnableContextRunner$1.run(RunnableContextRunner.java:123)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:97)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:370)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:231)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:404)
+	at java.net.Socket.connect(Socket.java:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at com.sun.jndi.ldap.Connection.createSocket(Connection.java:368)
+	at com.sun.jndi.ldap.Connection.<init>(Connection.java:216)
+	... 19 more
+
+  localhost:389

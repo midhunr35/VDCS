@@ -1,0 +1,129 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucInspectorsSummeryDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wpfx="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+     xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+    xmlns:properties="clr-namespace:VSDApp.Properties"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" Initialized="root_Initialized"
+	x:Name="root"  Width="Auto" Height="Auto">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid DataContext="{Binding ElementName=root}">
+        <Border Background="#90000000" Visibility="{Binding Visibility}" Margin="0,0,0,0">
+            <StackPanel x:Name="stkPnlMain" Width="auto" Height="auto" Orientation="Vertical">
+
+                <StackPanel x:Name="stkPnlAllInspectors" Orientation="Horizontal">
+                    <StackPanel x:Name="stkPnlMainInspector" Margin="5,25,8,0" Background="White">
+                        <Image x:Name="imgInspector" Source="../Images/Inspectors/ambadran.png" Width="100" Height="auto" />
+                        <TextBlock x:Name="lblInspectorRating" Text=" Rating: " Foreground="Black" FontWeight="Bold" FontSize="25" TextWrapping="Wrap" Height="60" Margin="1" />
+                    </StackPanel>
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="mcChart" Width="850" Height="350" Margin="0,25,0,2" Background="White">
+                        <DVC:Chart.Series>
+                            <DVC:ColumnSeries x:Name="inspectionColumn"  Title="Inspection" IndependentValueBinding="{Binding Path=Key}" DependentValueBinding="{Binding Path=Value}">
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="DVC:ColumnDataPoint">
+                                                    <Grid>
+                                                        <Rectangle Stroke="Black">
+                                                            <Rectangle.Fill>
+                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                    <GradientStop Color="#9BBB5A" Offset="0"/>
+                                                                    <GradientStop Color="#9BBB5A" Offset="1"/>
+                                                                </LinearGradientBrush>
+                                                            </Rectangle.Fill>
+                                                        </Rectangle>
+                                                        <Grid Margin="0 -20 0 0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                                            <TextBlock Text="{TemplateBinding FormattedDependentValue}" Margin="0" FontSize="10"  />
+                                                        </Grid>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                                <DVC:ColumnSeries.LegendItemStyle>
+                                    <Style TargetType="{x:Type DVC:LegendItem}" >
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type DVC:LegendItem}">
+
+                                                    <StackPanel>
+                                                        <StackPanel Orientation="Horizontal" >
+                                                            <Rectangle Width="6" Height="6" Fill="#9BBB5A"   />
+                                                            <TextBlock Text=" Inspections" FontWeight="Bold" Foreground="#9BBB5A" FontSize="11" />
+                                                            <!--<datavis:Title Content="{TemplateBinding Content}" Foreground="{Binding ElementName=chart1,Path=Tag}" FontSize="18" Margin="10"/>-->
+                                                        </StackPanel>
+                                                    </StackPanel>
+
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DVC:ColumnSeries.LegendItemStyle>
+                            </DVC:ColumnSeries>
+                            <DVC:ColumnSeries x:Name="violationColumn" Title="violation" IndependentValueBinding="{Binding Path=Key}" DependentValueBinding="{Binding Path=Value}">
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="DVC:ColumnDataPoint">
+                                                    <Grid>
+                                                        <Rectangle Stroke="Black">
+                                                            <Rectangle.Fill>
+                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                    <GradientStop Color="#9B562A" Offset="0"/>
+                                                                    <GradientStop Color="#9B5B2D" Offset="1"/>
+                                                                </LinearGradientBrush>
+                                                            </Rectangle.Fill>
+                                                        </Rectangle>
+                                                        <Grid Margin="0 -20 0 0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                                            <TextBlock Text="{TemplateBinding FormattedDependentValue}" Margin="0" FontSize="10"  />
+                                                        </Grid>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                                <DVC:ColumnSeries.LegendItemStyle>
+                                    <Style TargetType="{x:Type DVC:LegendItem}" >
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type DVC:LegendItem}">
+                                                    <StackPanel>
+                                                        <StackPanel Orientation="Horizontal" >
+                                                            <Rectangle Width="6" Height="6" Fill="#9B5B2D"   />
+                                                            <TextBlock Text=" Violations" FontWeight="Bold" Foreground="#9B5B2D" FontSize="11" />
+                                                            <!--<datavis:Title Content="{TemplateBinding Content}" Foreground="{Binding ElementName=chart1,Path=Tag}" FontSize="18" Margin="10"/>-->
+                                                        </StackPanel>
+                                                    </StackPanel>
+
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DVC:ColumnSeries.LegendItemStyle>
+                            </DVC:ColumnSeries>
+                        </DVC:Chart.Series>
+                    </DVC:Chart>
+                </StackPanel>
+                <StackPanel x:Name="stkPnlBtns" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,5,5,0">
+                    <Image x:Name="btnOk" Visibility="Collapsed" Source="..\Images\Buttons\Small\Back.png" Width="100" MouseLeftButtonUp="OkButton_Click" MouseLeftButtonDown="btnOk_MouseLeftButtonDown"  />
+                    <Button x:Name="btnBackImage2" Grid.Row="3" Grid.Column="1"  Content="{x:Static properties:Resources.BtnBack}" Margin="10,0,0,0"  Style="{StaticResource ButtonBackHalfControl}"   HorizontalAlignment="Right"  Click="OkButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!--</Border>-->
+    </Grid>
+
+</UserControl>

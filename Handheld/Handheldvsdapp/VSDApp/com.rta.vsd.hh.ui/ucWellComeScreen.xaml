@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucWellComeScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:properties="clr-namespace:VSDApp.Properties"
+              xmlns:vsdUC="clr-namespace:VSDApp.com.rta.vsd.hh.ui"
+             xmlns:vsdUC2="clr-namespace:VSDApp.com.rta.vsd.hh.ui"
+              xmlns:extToolkit="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+            Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Loaded="UserControl_Loaded_1" SizeChanged="UserControl_SizeChanged_1"
+             HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Initialized="UserControl_Initialized_1">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid x:Name="grdMain2">
+                <Grid  x:Name="grdMain">
+                    <Grid.Background>
+                <ImageBrush ImageSource="..\Images\background_New.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="AUto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="stckPanelMain" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                <StackPanel x:Name="stckPanelText" Orientation="Vertical" Width="350" >
+                    <TextBlock x:Name="txtBlock1" FontSize="25" TextWrapping="Wrap"  Text="{x:Static properties:Resources.welcomTextBlock1}"/>
+                    <TextBlock x:Name="txtBlock2"  FontSize="15" Text="{x:Static properties:Resources.welcomTextBlock2}"  />
+                </StackPanel>
+                <StackPanel x:Name="stckPanelMenueOption" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image x:Name="imagIntellegentTargeting"  Source="..\Images\Buttons\NewMenue\intelligent_targeting.jpg" Margin="5,5,0,0" MouseEnter="imagIntellegentTargeting_MouseEnter" MouseLeave="imagIntellegentTargeting_MouseLeave" MouseLeftButtonUp="imagIntellegentTargeting_MouseLeftButtonUp" />
+
+                        <Image x:Name="imagInspection" Source="..\Images\Buttons\NewMenue\inspection.jpg" Margin="7,5,0,0" MouseEnter="imagInspection_MouseEnter" MouseLeave="imagInspection_MouseLeave" MouseLeftButtonUp="imgBtnInspect_MouseLeftButtonUp_1"  />
+                        <Image x:Name="imageViolation" Source="..\Images\Buttons\NewMenue\violation.jpg" Margin="8,5,0,0" MouseEnter="imageViolation_MouseEnter" MouseLeave="imageViolation_MouseLeave" MouseLeftButtonUp="MenuItem_Click_7"  />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imageVehicleSearch" Source="..\Images\Buttons\NewMenue\vehicle_search.jpg" Margin="8,5,0,0" MouseEnter="imageVehicleSearch_MouseEnter" MouseLeave="imageVehicleSearch_MouseLeave" MouseLeftButtonUp="MenuItem_Click_6" />
+                        <Image x:Name="imageOperatorSearch" Source="..\Images\Buttons\NewMenue\operator_search.jpg" Margin="9,5,0,0" MouseEnter="imageOperatorSearch_MouseEnter" MouseLeave="imageOperatorSearch_MouseLeave" MouseLeftButtonUp="MenuItem_Click_8"  />
+                        <Image x:Name="imageKnowledge" Source="..\Images\Buttons\NewMenue\knowledge.jpg" Margin="8,5,0,0" MouseEnter="imageKnowledge_MouseEnter" MouseLeave="imageKnowledge_MouseLeave" MouseLeftButtonUp="imgVsdTrafficFines_MouseLeftButtonUp_1"  />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imageSynch" Source="..\Images\Buttons\NewMenue\Sync.jpg" Margin="5,5,0,0" MouseEnter="imageSynch_MouseEnter" MouseLeave="imageSynch_MouseLeave" MouseLeftButtonUp="MenuItem_Click_4" />
+                        <Image x:Name="imageMainMenu" Visibility="Collapsed" Source="..\Images\Buttons\NewMenue\my_profile.jpg" Margin="5,5,0,0" MouseEnter="imageMainMenu_MouseEnter" MouseLeave="imageMainMenu_MouseLeave" />
+                        <Image x:Name="imageLogout" Source="..\Images\Buttons\NewMenue\logout.jpg" Margin="8,5,0,0" MouseEnter="imageLogout_MouseEnter" MouseLeave="imageLogout_MouseLeave" MouseLeftButtonUp="MenuItem_Click_5" />
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+            <Grid x:Name="maingrid" Visibility="Collapsed">
+
+                <Grid.Background>
+                    <ImageBrush ImageSource="..\Images\background_New.png"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5"/>
+
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label  Content="{x:Static properties:Resources.lblWelCome}" HorizontalAlignment="Left" HorizontalContentAlignment="Left"  Grid.Row="1" Grid.Column="3" FontFamily="Segoe UI" FontWeight="Medium" FontSize="30" />
+                <Label x:Name="lblInspectorName" HorizontalAlignment="Left" HorizontalContentAlignment="Left"  Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI" FontWeight="Medium" FontSize="35" />
+                <Label x:Name="lblSelectOption" Content="{x:Static properties:Resources.lblSelectOption}" HorizontalAlignment="Center"  HorizontalContentAlignment="Center"  Grid.Row="3" Grid.Column="5" FontFamily="Segoe UI" FontWeight="Medium" FontSize="30" />
+                <Image x:Name="imageRTAInsp2" Grid.Row="5" Grid.Column="3" Source="..\Images\Inspectors\hialbedwawi.png" Width="260" />
+
+
+
+                <StackPanel x:Name="stackPanelButtons" Orientation="Vertical" Grid.Row="5" Grid.Column="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imgBtnInspect" Margin="25,15,15,15" Source="..\Images\Buttons\Menue\Inspection English Up.png" Width="80" MouseLeftButtonUp="imgBtnInspect_MouseLeftButtonUp_1"  MouseLeftButtonDown="imgBtnInspect_MouseLeftButtonDown_1"/>
+                        <Image x:Name="imgSerchVioHist" Margin="15,15,15,15"  Source="..\Images\Buttons\Menue\Violation Up.png" Width="80" VerticalAlignment="Bottom" MouseLeftButtonDown="imgSerchVioHist_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_7" />
+                        <Image x:Name="imgSerchVehcleProfile" Margin="15,15,15,15"  Source="..\Images\Buttons\Menue\Vehicle Up.png" Width="80" MouseLeftButtonDown="imgSerchVehcleProfile_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_6" VerticalAlignment="Bottom" />
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imgSerchOpertor" Margin="25,15,15,15"  Source="..\Images\Buttons\Menue\Operator Up.png" Width="80" VerticalAlignment="Bottom" MouseLeftButtonDown="imgSerchOpertor_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_8" />
+                        <Image x:Name="imgVsdTrafficFines" Margin="15,15,15,15" Source="..\Images\Buttons\Menue\KB Up.png" Width="80" VerticalAlignment="Bottom" MouseLeftButtonDown="imgVsdTrafficFines_MouseLeftButtonDown_1" MouseLeftButtonUp="imgVsdTrafficFines_MouseLeftButtonUp_1" />
+                        <Image x:Name="imagBtnSync" Margin="15,15,15,15"  Source="..\Images\Buttons\Menue\Sync Up.png" Width="80" MouseLeftButtonDown="imagBtnSync_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_4"/>
+
+
+
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imgBtnLanguage" Margin="25,15,15,15" Source="..\Images\Buttons\Menue\English Up.png" Width="80" MouseLeftButtonDown="imgBtnLanguage_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_3"/>
+                        <Image x:Name="imgBtnLogout" Margin="15,15,15,15"  Source="..\Images\Buttons\Menue\Logout Up.png" Width="80" MouseLeftButtonDown="imgBtnLogout_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_5"/>
+
+
+                        <Image x:Name="imgBtnExit" Margin="15,15,15,15" Source="..\Images\Buttons\Menue\Exit Up.png" Width="80" MouseLeftButtonDown="imgBtnExit_MouseLeftButtonDown_1" MouseLeftButtonUp="MenuItem_Click_1"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <Image x:Name="imagebtnNext" Grid.Row="7" Grid.Column="7" Visibility="Collapsed" Source="..\Images\Buttons\Small\Next.png" Width="140"   Margin="30 0 0 0"  HorizontalAlignment="Right"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebtnNext_MouseLeftButtonDown_1"  MouseLeftButtonUp="imagebtnNext_MouseLeftButtonUp_1"  />
+
+                    </Grid>
+                </Grid>
+
+
+                <!-- <vsdUC:ucComercialActivityInspectionOption x:Name="ucComercialActivityInspection" Visibility="Collapsed" />-->
+            </Grid>
+            <vsdUC2:ucInspectionType x:Name="ucInspectionTypeOption" Visibility="Collapsed"/>
+        </Grid>
+    </ScrollViewer>
+
+</UserControl>

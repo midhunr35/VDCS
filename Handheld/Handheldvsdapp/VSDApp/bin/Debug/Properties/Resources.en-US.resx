@@ -1,0 +1,1143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Area" xml:space="preserve">
+    <value>Area*</value>
+  </data>
+  <data name="BtnBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BtnLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="BtnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="BtnRecordViolation" xml:space="preserve">
+    <value>Record Violation</value>
+  </data>
+  <data name="BtnReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="BtnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="BtnSearchVehicleOROperator" xml:space="preserve">
+    <value>Search Vehicle Profile/Operator Profile</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country *</value>
+  </data>
+  <data name="Emirates" xml:space="preserve">
+    <value>Emirate*</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location*</value>
+  </data>
+  <data name="LocationDetails" xml:space="preserve">
+    <value>Location Details:</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PlateCatogory" xml:space="preserve">
+    <value>Plate Cat*</value>
+  </data>
+  <data name="PlateCode" xml:space="preserve">
+    <value>Plate Code*</value>
+  </data>
+  <data name="PlateNumber" xml:space="preserve">
+    <value>Plate No. *</value>
+  </data>
+  <data name="SearchVehicleRecord" xml:space="preserve">
+    <value>Vehicle Search:</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="VehicleCategory" xml:space="preserve">
+    <value>Vehicle Category *</value>
+  </data>
+  <data name="VehicleDetials" xml:space="preserve">
+    <value>Vehicle Details</value>
+  </data>
+  <data name="VSDApp" xml:space="preserve">
+    <value>Vehicle Safety Database</value>
+  </data>
+  <data name="WhatDoYouWantToDo" xml:space="preserve">
+    <value>What Do You Want To Do?</value>
+  </data>
+  <data name="ChassisNumber" xml:space="preserve">
+    <value>Chassis No*</value>
+  </data>
+  <data name="Inspect" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="Make" xml:space="preserve">
+    <value>Make*</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model*</value>
+  </data>
+  <data name="OperatorName" xml:space="preserve">
+    <value>Operator Name*</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year*</value>
+  </data>
+  <data name="InspectionInstruction" xml:space="preserve">
+    <value>Inspection Instruction</value>
+  </data>
+  <data name="OpenViolations" xml:space="preserve">
+    <value>Open Violations</value>
+  </data>
+  <data name="Recomendations" xml:space="preserve">
+    <value>Recommendation</value>
+  </data>
+  <data name="VehicleOVRR" xml:space="preserve">
+    <value>Vehicle OVRR</value>
+  </data>
+  <data name="ActualValue" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="AddDefectORSafetyViolation" xml:space="preserve">
+    <value>Add Defects</value>
+  </data>
+  <data name="BtnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="BtnPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category*</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ConfiscationReason" xml:space="preserve">
+    <value>Confiscation Reason</value>
+  </data>
+  <data name="ConfiscationRequired" xml:space="preserve">
+    <value>Confiscation Required</value>
+  </data>
+  <data name="Defect" xml:space="preserve">
+    <value>Defect</value>
+  </data>
+  <data name="DeriverDetails" xml:space="preserve">
+    <value>Driver Data</value>
+  </data>
+  <data name="DriverName" xml:space="preserve">
+    <value>Driver Name</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="LicenseNumber" xml:space="preserve">
+    <value>Lic. No.*</value>
+  </data>
+  <data name="OverAllViolationSeverity" xml:space="preserve">
+    <value>Violation Severity</value>
+  </data>
+  <data name="PlateCondition" xml:space="preserve">
+    <value>Plate Condition</value>
+  </data>
+  <data name="PlateConfiscated" xml:space="preserve">
+    <value>Plate Confiscated</value>
+  </data>
+  <data name="PlateConfiscation" xml:space="preserve">
+    <value>Plate Confiscation</value>
+  </data>
+  <data name="SelectType" xml:space="preserve">
+    <value>Type*</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Sub-Cat*</value>
+  </data>
+  <data name="ViolationID" xml:space="preserve">
+    <value>Violation ID</value>
+  </data>
+  <data name="ViolationSummary" xml:space="preserve">
+    <value>Violation Summary</value>
+  </data>
+  <data name="SelectSearchoption" xml:space="preserve">
+    <value>Select Search Option</value>
+  </data>
+  <data name="ViewOperatorProfile" xml:space="preserve">
+    <value>View Operator Profile</value>
+  </data>
+  <data name="ViewVehicleProfile" xml:space="preserve">
+    <value>View Vehicle Profile</value>
+  </data>
+  <data name="ViewViolationHistory" xml:space="preserve">
+    <value>View Violation History</value>
+  </data>
+  <data name="OperatorOVVRScore" xml:space="preserve">
+    <value>Operator O-VRR Score</value>
+  </data>
+  <data name="OperatorProfile" xml:space="preserve">
+    <value>Operator Profile:</value>
+  </data>
+  <data name="SearchOperatorDetails" xml:space="preserve">
+    <value>Search for Operator:</value>
+  </data>
+  <data name="TopFiveViolatingVehicles" xml:space="preserve">
+    <value>Top Five Violating Vehicles</value>
+  </data>
+  <data name="TrafficeFileNumber" xml:space="preserve">
+    <value>Traffic File Number*</value>
+  </data>
+  <data name="SearchBy" xml:space="preserve">
+    <value>SearchBy:</value>
+  </data>
+  <data name="SearchViolation" xml:space="preserve">
+    <value>Search Violations:</value>
+  </data>
+  <data name="ViolationDetails" xml:space="preserve">
+    <value>Violation Details:</value>
+  </data>
+  <data name="VehicleDetailRecord" xml:space="preserve">
+    <value>Vehicle Detail</value>
+  </data>
+  <data name="GoodCondition" xml:space="preserve">
+    <value>Good Condition</value>
+  </data>
+  <data name="Majorandoverdue" xml:space="preserve">
+    <value>Major and over due</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Replaceable" xml:space="preserve">
+    <value>Requires Replacement</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="SafetyViolation" xml:space="preserve">
+    <value>Traffic Fines</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>اللغة الإنجليزية</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>Synchronize</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="btnMainMenue" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="lblAppLogout" xml:space="preserve">
+    <value>Application Logout</value>
+  </data>
+  <data name="lblLoggingIn" xml:space="preserve">
+    <value>Please wait, Logging in…</value>
+  </data>
+  <data name="LblMessageBoxNotAuthorized" xml:space="preserve">
+    <value>Sorry, Login not Authorized.</value>
+  </data>
+  <data name="lblPleaseWait" xml:space="preserve">
+    <value>Please Wait...</value>
+  </data>
+  <data name="lblWouldYouLike" xml:space="preserve">
+    <value>Would You Like to Logout the application ?</value>
+  </data>
+  <data name="lblalreadyadded" xml:space="preserve">
+    <value>Defect already inserted</value>
+  </data>
+  <data name="lblComprehensivetestexists" xml:space="preserve">
+    <value>Comprehensive test exists</value>
+  </data>
+  <data name="lblDataNotValid" xml:space="preserve">
+    <value>Data Not Valid</value>
+  </data>
+  <data name="lblexistsopenviolation" xml:space="preserve">
+    <value>Exists in a open violation</value>
+  </data>
+  <data name="lblSeveritydoesnotexist" xml:space="preserve">
+    <value>Severity does not exist</value>
+  </data>
+  <data name="lblSearchingVehicle" xml:space="preserve">
+    <value>Please wait, Searching vehicle data...</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MenueOperatorProfile" xml:space="preserve">
+    <value>Operator Profile</value>
+  </data>
+  <data name="MenueSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="MenueVehicleProfile" xml:space="preserve">
+    <value>Vehicle Profile</value>
+  </data>
+  <data name="MenueVilationHistory" xml:space="preserve">
+    <value>Violation History</value>
+  </data>
+  <data name="popupmesag" xml:space="preserve">
+    <value>Username should be in CAPS.</value>
+  </data>
+  <data name="lblSubmitInspection" xml:space="preserve">
+    <value>Would You Like to Submit Inspection ?</value>
+  </data>
+  <data name="lblSubmitInspectionMessage" xml:space="preserve">
+    <value>Submitting Inspection...</value>
+  </data>
+  <data name="lblSubmitViolation" xml:space="preserve">
+    <value>Would You Like To Submit Violation ?</value>
+  </data>
+  <data name="lblSubmitViolationMessage" xml:space="preserve">
+    <value>Submitting Violation...</value>
+  </data>
+  <data name="lblCloseApplication" xml:space="preserve">
+    <value>Close Application</value>
+  </data>
+  <data name="lblCloseApplicationMessage" xml:space="preserve">
+    <value>Would You Like to Close Application ?</value>
+  </data>
+  <data name="lblWouldYouLikeLang" xml:space="preserve">
+    <value>Please note, Changing the language will log you out from the application, Do you want to continue ?</value>
+  </data>
+  <data name="OperatorName2" xml:space="preserve">
+    <value>Operator Name</value>
+  </data>
+  <data name="lblOVVRRating" xml:space="preserve">
+    <value>OVRR Rating</value>
+  </data>
+  <data name="VehicleNotFound" xml:space="preserve">
+    <value>Sorry, Vehicle data not found</value>
+  </data>
+  <data name="DataValidation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="SafetyViolationSubmitted" xml:space="preserve">
+    <value>Safety Violation Submitted</value>
+  </data>
+  <data name="Passwordnotentered" xml:space="preserve">
+    <value>Kindly Insert the password !!</value>
+  </data>
+  <data name="PasswordIncorrect" xml:space="preserve">
+    <value>Sorry, You have inserted a wrong password !!</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Nationality*</value>
+  </data>
+  <data name="PlateNumber2" xml:space="preserve">
+    <value>Plate No.</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Defect</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="lblForgotUsername" xml:space="preserve">
+    <value>Forgot your username and password</value>
+  </data>
+  <data name="lblForgotUsernameMessage" xml:space="preserve">
+    <value>Option Not Activated</value>
+  </data>
+  <data name="PlateDetails" xml:space="preserve">
+    <value>Plate Details</value>
+  </data>
+  <data name="RiskRating" xml:space="preserve">
+    <value>Risk Rating</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelThreadMessage" xml:space="preserve">
+    <value>Please wait while process will be cancelled...</value>
+  </data>
+  <data name="lblTicketConfirmation" xml:space="preserve">
+    <value>Do you want to print Recipt ?</value>
+  </data>
+  <data name="TitlePermissionWindow" xml:space="preserve">
+    <value>VSD</value>
+  </data>
+  <data name="ChassisNumber2" xml:space="preserve">
+    <value>Chassis Number</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IssueDate" xml:space="preserve">
+    <value>Issue Date</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblInspectionConfirmationMessage" xml:space="preserve">
+    <value>Do you want to keep inspection on the same location</value>
+  </data>
+  <data name="SubCategory2" xml:space="preserve">
+    <value>Sub-Category</value>
+  </data>
+  <data name="SelectLanguage2" xml:space="preserve">
+    <value>Printing Language</value>
+  </data>
+  <data name="Printing" xml:space="preserve">
+    <value>Printing Receipt</value>
+  </data>
+  <data name="DefectSummary" xml:space="preserve">
+    <value>Defect Summary</value>
+  </data>
+  <data name="lblCurrentScore" xml:space="preserve">
+    <value>Your Current Score:</value>
+  </data>
+  <data name="lblTargetScore" xml:space="preserve">
+    <value>Target Total</value>
+  </data>
+  <data name="lblWelCome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="lblGetMore" xml:space="preserve">
+    <value>Get 219 more and beat him</value>
+  </data>
+  <data name="lblPlaceScore" xml:space="preserve">
+    <value>1st Place Score:</value>
+  </data>
+  <data name="lblGoodBye" xml:space="preserve">
+    <value>Thank You for your effort</value>
+  </data>
+  <data name="lblTotalVehicleInspected" xml:space="preserve">
+    <value>Total inspection:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Finesamounts" xml:space="preserve">
+    <value>Fines amounts</value>
+  </data>
+  <data name="Brake" xml:space="preserve">
+    <value>Brake</value>
+  </data>
+  <data name="Enginecompartmentanddriveline" xml:space="preserve">
+    <value>Engine compartment and driveline</value>
+  </data>
+  <data name="Lighting" xml:space="preserve">
+    <value>Lighting</value>
+  </data>
+  <data name="Modifiedvehicles" xml:space="preserve">
+    <value>Modified vehicles</value>
+  </data>
+  <data name="Roadsafetyrequirements" xml:space="preserve">
+    <value>Road safety requirements</value>
+  </data>
+  <data name="SteeringandSuspension" xml:space="preserve">
+    <value>Steering and Suspension</value>
+  </data>
+  <data name="VehicleIdentificationNumber" xml:space="preserve">
+    <value>Vehicle Identification Number</value>
+  </data>
+  <data name="Wheelandtires" xml:space="preserve">
+    <value>Wheel and tires</value>
+  </data>
+  <data name="BodyCondition" xml:space="preserve">
+    <value>Body Condition</value>
+  </data>
+  <data name="Inspect2" xml:space="preserve">
+    <value>Inspect</value>
+  </data>
+  <data name="ErrorBusiness" xml:space="preserve">
+    <value>Sorry, Business error while calling service, Kindly contact support team.</value>
+  </data>
+  <data name="ErrorException" xml:space="preserve">
+    <value>Sorry, Exception problem while calling service, Kindly contact support team.</value>
+  </data>
+  <data name="ErrorNotFound" xml:space="preserve">
+    <value>Data not Found</value>
+  </data>
+  <data name="lblAlwaysReme" xml:space="preserve">
+    <value>and always remember</value>
+  </data>
+  <data name="lblCreativity" xml:space="preserve">
+    <value>Creativity .. is to look at familiar in an ususual way</value>
+  </data>
+  <data name="lblInspectionResult" xml:space="preserve">
+    <value>Inspection Result</value>
+  </data>
+  <data name="lblSelectOption" xml:space="preserve">
+    <value>Select Option</value>
+  </data>
+  <data name="offlinedata" xml:space="preserve">
+    <value>Data Store in Local Database, Kindly Synchronize The Data Later.</value>
+  </data>
+  <data name="UnableToStoreLocalData" xml:space="preserve">
+    <value>Sorry, Unable to store the data !!</value>
+  </data>
+  <data name="ComentsToolTip" xml:space="preserve">
+    <value>Max. 85 Characters Allowed</value>
+  </data>
+  <data name="OfflineViolation" xml:space="preserve">
+    <value>Offline Violation</value>
+  </data>
+  <data name="VRRScore" xml:space="preserve">
+    <value>VRR Score</value>
+  </data>
+  <data name="InspectionNotRecomended" xml:space="preserve">
+    <value>Inspection not recommended for this vehicle</value>
+  </data>
+  <data name="InspectionRecomended" xml:space="preserve">
+    <value>Inspection recommended for this vehicle</value>
+  </data>
+  <data name="ImpoundGracePeriod" xml:space="preserve">
+    <value>24hr Grace Period</value>
+  </data>
+  <data name="Impounding" xml:space="preserve">
+    <value>Impounding</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>Mileage</value>
+  </data>
+  <data name="Ammount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Fine" xml:space="preserve">
+    <value>Fine</value>
+  </data>
+  <data name="TechnicalFines" xml:space="preserve">
+    <value>Technical Fines</value>
+  </data>
+  <data name="TelematicsFines" xml:space="preserve">
+    <value>Telematics Fines</value>
+  </data>
+  <data name="lblSendingLocation" xml:space="preserve">
+    <value>Sending HH Location</value>
+  </data>
+  <data name="lblDriverName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblIntrestedVehicleUpdatedTime" xml:space="preserve">
+    <value>Last update for intelligent target list:</value>
+  </data>
+  <data name="lblIntrestedVehicleNotFound" xml:space="preserve">
+    <value>Sorry, Intelligent target list not found.</value>
+  </data>
+  <data name="DueDate2" xml:space="preserve">
+    <value>Defect Test Due Date</value>
+  </data>
+  <data name="NoTestRequired" xml:space="preserve">
+    <value>No Test Required</value>
+  </data>
+  <data name="DefectImgCount" xml:space="preserve">
+    <value>Please note, Two pictures already captured, only two pictures allowed for each defect.</value>
+  </data>
+  <data name="DefImgSaveConfirmation" xml:space="preserve">
+    <value>Do you want to save this image?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="IsHazard" xml:space="preserve">
+    <value>Hazard vehicle</value>
+  </data>
+  <data name="ScreenChangeConfirmation" xml:space="preserve">
+    <value>Do you want to switch from this screen?</value>
+  </data>
+  <data name="TakeDefectImage" xml:space="preserve">
+    <value>Take Picture</value>
+  </data>
+  <data name="VehHistory" xml:space="preserve">
+    <value>Vehicle History</value>
+  </data>
+  <data name="lblDefectInfoMissing" xml:space="preserve">
+    <value>Defect Information Missing</value>
+  </data>
+  <data name="meneOperatorSearch" xml:space="preserve">
+    <value>Operator Search</value>
+  </data>
+  <data name="menueInspection" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="menueIntellegentTargeting" xml:space="preserve">
+    <value>Intellegent Targeting</value>
+  </data>
+  <data name="menueKnowledg" xml:space="preserve">
+    <value>Knowledge</value>
+  </data>
+  <data name="menueSync" xml:space="preserve">
+    <value>Sync</value>
+  </data>
+  <data name="menueVehicleSearch" xml:space="preserve">
+    <value>Vehicle Search</value>
+  </data>
+  <data name="menueViolation" xml:space="preserve">
+    <value>Violation</value>
+  </data>
+  <data name="welcomTextBlock1" xml:space="preserve">
+    <value>Welcome to
+Vehicle Safety DatabaseApplication</value>
+  </data>
+  <data name="welcomTextBlock2" xml:space="preserve">
+    <value>The Vehicle Profile is Created in VSD for vehiclesregistered in Dubai, associated with 
+company traffic files that are(Non-Government , Commercial) 
+and fall under Heavy Vehicle and TrailersCategory.
+
+
+The Vehicle Profile is created when the vehicle 
+has at least one RTA encounter from the below:
+
+•) Roadside Inspection
+•) Telematics Safety Violation 
+•) Vehicle Test at "Vehicle Testing Centers"</value>
+  </data>
+  <data name="RTAVSDApplication" xml:space="preserve">
+    <value>RTA VSD Application</value>
+  </data>
+  <data name="Fillintherequiredinformation" xml:space="preserve">
+    <value>Please insert the required information.</value>
+  </data>
+  <data name="gettingInspectors" xml:space="preserve">
+    <value>Please wait, Fetching you profile Information…</value>
+  </data>
+  <data name="SearchingViolationHistory" xml:space="preserve">
+    <value>Searching Violation History...</value>
+  </data>
+  <data name="GoodByeQuote1" xml:space="preserve">
+    <value>"Innovation is to be or not be the: I'm innovative government then I'm existing government."</value>
+  </data>
+  <data name="GoodByeQuote2" xml:space="preserve">
+    <value>"Don’t work as an employee, but as a leader love his country, and as artist creating his art"</value>
+  </data>
+  <data name="GoodByeQuote3" xml:space="preserve">
+    <value>HH. Sheikh Mohammed Bin Rashid Al Maktoum</value>
+  </data>
+  <data name="DRRScore" xml:space="preserve">
+    <value>DRR Score</value>
+  </data>
+  <data name="FineAmount" xml:space="preserve">
+    <value>Fine Amount</value>
+  </data>
+  <data name="goodByScreenErrMsg" xml:space="preserve">
+    <value>Sorry, There is a connection problem, can't retrieve your data.</value>
+  </data>
+  <data name="goodByScreenMsg" xml:space="preserve">
+    <value>Please note, This information doesn't include offline data stored on other devices</value>
+  </data>
+  <data name="InspectionWithFine" xml:space="preserve">
+    <value>Inspection With Fine</value>
+  </data>
+  <data name="InspectionWithoutFine" xml:space="preserve">
+    <value>Inspection Without Fine</value>
+  </data>
+  <data name="synchAndGetInspData" xml:space="preserve">
+    <value>Kindly wait, Synching and updating inspection Information...</value>
+  </data>
+  <data name="TotalViolations" xml:space="preserve">
+    <value>Total Defects</value>
+  </data>
+  <data name="menueImpounding" xml:space="preserve">
+    <value>Impounding Screen</value>
+  </data>
+  <data name="TotalInspection" xml:space="preserve">
+    <value>Total Inspection</value>
+  </data>
+  <data name="lblSearchingDriver" xml:space="preserve">
+    <value>Please wait, Searching driver data…</value>
+  </data>
+  <data name="lblProblemInFetchingInscInfo" xml:space="preserve">
+    <value>Sorry, Problem in fetching you profile</value>
+  </data>
+  <data name="OVRRODRRScore" xml:space="preserve">
+    <value>O-VRR O-DRR Score</value>
+  </data>
+  <data name="lblPrintConfirmation" xml:space="preserve">
+    <value>Do You want to contiune without printing ?</value>
+  </data>
+  <data name="ODRR" xml:space="preserve">
+    <value>ODRR</value>
+  </data>
+  <data name="OVRR" xml:space="preserve">
+    <value>OVRR</value>
+  </data>
+  <data name="NoDevicesDetected" xml:space="preserve">
+    <value>Sorry, Unable to find camera at the device!!</value>
+  </data>
+  <data name="CameraError" xml:space="preserve">
+    <value>Sorry, we have error while loading the camera.</value>
+  </data>
+  <data name="ImageFail" xml:space="preserve">
+    <value>Sorry, Unable to capture the picture, please contact the support team !!</value>
+  </data>
+  <data name="ImageSuccess" xml:space="preserve">
+    <value>Defect picture saved successfully.</value>
+  </data>
+  <data name="DefImgDelConfirmation" xml:space="preserve">
+    <value>Do you want to delete this picture?</value>
+  </data>
+  <data name="lblSearchOperator" xml:space="preserve">
+    <value>Kindly wait, Searching Operator Profile...</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDesigination" xml:space="preserve">
+    <value>Desigination</value>
+  </data>
+  <data name="lblDesiginationAr" xml:space="preserve">
+    <value>Desigination (Ar)</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblFirstNameAr" xml:space="preserve">
+    <value>First Name (Ar)</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblLastNameAr" xml:space="preserve">
+    <value>Last Name (Ar)</value>
+  </data>
+  <data name="lblMobileNumber" xml:space="preserve">
+    <value>Mobile No.</value>
+  </data>
+  <data name="lblProfileManagment" xml:space="preserve">
+    <value>Profile Managment</value>
+  </data>
+  <data name="lblRTAEmployeeNumber" xml:space="preserve">
+    <value>Employee No.</value>
+  </data>
+  <data name="lblPicFormat" xml:space="preserve">
+    <value>Profile Picture (.jpg, .jpeg,.png) 
+Max image resolution:300*300</value>
+  </data>
+  <data name="btnRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="btnSelect" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="lblPicWarning" xml:space="preserve">
+    <value>Profile picture maximum resolution should be 1000*1000. Please select another picture.</value>
+  </data>
+  <data name="lblUpdatingUserAccount" xml:space="preserve">
+    <value>Kindly wait, Updating user account information...</value>
+  </data>
+  <data name="lblMobileNumberValidation" xml:space="preserve">
+    <value>Please Enter Mobile Number</value>
+  </data>
+  <data name="lblMobileNumberNumbericValidation" xml:space="preserve">
+    <value>Mobile number should only be a digit.</value>
+  </data>
+  <data name="lblComercialActivityOption" xml:space="preserve">
+    <value>Commercial Activities inspections</value>
+  </data>
+  <data name="menueComercialActivity" xml:space="preserve">
+    <value>Commercial Activities</value>
+  </data>
+  <data name="menueProvisionalInspection" xml:space="preserve">
+    <value>Provisional Inspection</value>
+  </data>
+  <data name="menueRecordInspection" xml:space="preserve">
+    <value>Record Inspection</value>
+  </data>
+  <data name="lblAgencyName" xml:space="preserve">
+    <value>Agency Name</value>
+  </data>
+  <data name="lblArea" xml:space="preserve">
+    <value>By Area</value>
+  </data>
+  <data name="lblCarRentalAgencySearch" xml:space="preserve">
+    <value>Car Rental Agency Search</value>
+  </data>
+  <data name="lblTFN" xml:space="preserve">
+    <value>By Traffice File / Trade Liscense</value>
+  </data>
+  <data name="lblTradeLicenseNo" xml:space="preserve">
+    <value>Trade License No.</value>
+  </data>
+  <data name="lblTrafficFileNo" xml:space="preserve">
+    <value>Traffic File No.</value>
+  </data>
+  <data name="lblAgencyNameValidation" xml:space="preserve">
+    <value>Agency name not entered.</value>
+  </data>
+  <data name="lblAreaValidation" xml:space="preserve">
+    <value>Area not selected</value>
+  </data>
+  <data name="lblLocationValidation" xml:space="preserve">
+    <value>Location not selected</value>
+  </data>
+  <data name="lblTradeLicNoValidation" xml:space="preserve">
+    <value>Trade liscense not entered</value>
+  </data>
+  <data name="lblTrafficFileNoValidation" xml:space="preserve">
+    <value>Traffice file No not entered</value>
+  </data>
+  <data name="lblSearchingRentalAgency" xml:space="preserve">
+    <value>Searching Rental Agency..</value>
+  </data>
+  <data name="lblClass" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="lblLastinspectionDate" xml:space="preserve">
+    <value>Last Inspection Date</value>
+  </data>
+  <data name="lblInspectionRecomendation" xml:space="preserve">
+    <value>Inspection Recomended</value>
+  </data>
+  <data name="btnStartInspection" xml:space="preserve">
+    <value>Start Inspection</value>
+  </data>
+  <data name="btnViewInspectionHistory" xml:space="preserve">
+    <value>View Inspection History</value>
+  </data>
+  <data name="lblSearchResults" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="lblAgencyInformation" xml:space="preserve">
+    <value>Agency Information</value>
+  </data>
+  <data name="lblInspectionInformation" xml:space="preserve">
+    <value>Inspection Information</value>
+  </data>
+  <data name="lblOpenOffenses" xml:space="preserve">
+    <value>Open Offences</value>
+  </data>
+  <data name="ldlOffencesFines" xml:space="preserve">
+    <value>Offences and Fines</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+  <data name="lblTradeLicExpiry" xml:space="preserve">
+    <value>Trade License expiry Date</value>
+  </data>
+  <data name="btnNewSearch" xml:space="preserve">
+    <value>New Search</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="lblPhoneNo" xml:space="preserve">
+    <value>Phone No.</value>
+  </data>
+  <data name="Area2" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lblContractualInformation" xml:space="preserve">
+    <value>Contractual Information</value>
+  </data>
+  <data name="lblFollowup" xml:space="preserve">
+    <value>Follow-up</value>
+  </data>
+  <data name="lblGeneralRemarks" xml:space="preserve">
+    <value>General Remarks</value>
+  </data>
+  <data name="lblNoofauditedcontracts" xml:space="preserve">
+    <value>No of audited contracts</value>
+  </data>
+  <data name="lblNoofavailablevehicles" xml:space="preserve">
+    <value>No of available vehicles</value>
+  </data>
+  <data name="lblNoofcontracts" xml:space="preserve">
+    <value>No of contracts</value>
+  </data>
+  <data name="lblNooflentvehicles" xml:space="preserve">
+    <value>No of lent vehicles</value>
+  </data>
+  <data name="lblNoofrentedvehicles" xml:space="preserve">
+    <value>No of rented vehicles</value>
+  </data>
+  <data name="lblNoofvehiclesundermaintenance" xml:space="preserve">
+    <value>No of vehicles under maintenance</value>
+  </data>
+  <data name="lblNoofvehicleswithexpiredregistration" xml:space="preserve">
+    <value>No of vehicles with expired registration</value>
+  </data>
+  <data name="lblNoofvehicleswithoutrevenue" xml:space="preserve">
+    <value>No of vehicles without revenue</value>
+  </data>
+  <data name="lblOn" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="lblPercentageofauditedcontracts" xml:space="preserve">
+    <value>Percentage of audited contracts</value>
+  </data>
+  <data name="lblRentalInformation" xml:space="preserve">
+    <value>Rental Information</value>
+  </data>
+  <data name="lblTotalnumberofvehicles" xml:space="preserve">
+    <value>Total number of vehicles</value>
+  </data>
+  <data name="Location2" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="lblFollowUpdays" xml:space="preserve">
+    <value>In XX days</value>
+  </data>
+  <data name="lblUserProfileUpdated" xml:space="preserve">
+    <value>User Profile Updated Successfully</value>
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblCloseOffence" xml:space="preserve">
+    <value>Close Offence</value>
+  </data>
+  <data name="lblIssueDate" xml:space="preserve">
+    <value>Issue Date</value>
+  </data>
+  <data name="lblIssueInfraction" xml:space="preserve">
+    <value>Issue Infraction</value>
+  </data>
+  <data name="lblOffence" xml:space="preserve">
+    <value>Offence</value>
+  </data>
+  <data name="lblAgencyName2" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblOpenOffenceValidation" xml:space="preserve">
+    <value>There is no open offence for selected agency.</value>
+  </data>
+  <data name="RecordOffence" xml:space="preserve">
+    <value>Record Offence</value>
+  </data>
+  <data name="Infraction" xml:space="preserve">
+    <value>Infraction</value>
+  </data>
+  <data name="lblComercialInspctionConfirmation" xml:space="preserve">
+    <value>Are you sure you want to add an offence ?</value>
+  </data>
+  <data name="lblPleaseSelectOffence" xml:space="preserve">
+    <value>Please Select Offence</value>
+  </data>
+  <data name="lblRecordAlredyExist" xml:space="preserve">
+    <value>Record Already Exists</value>
+  </data>
+  <data name="lblAddThorughIssueInfraction" xml:space="preserve">
+    <value>Please add it through issue infraction in open offence table</value>
+  </data>
+  <data name="lblVehCatDefectConfirmation" xml:space="preserve">
+    <value>Selected vehicle category didnt contain defects. Do you want to continue ?</value>
+  </data>
+  <data name="lblOfflineViolationForUAEVehicle" xml:space="preserve">
+    <value>Offline Violation for Non-UAE vehicles is not Allowed.</value>
+  </data>
+  <data name="lblInspectionType" xml:space="preserve">
+    <value>Inspection Types</value>
+  </data>
+  <data name="lblDeviceInspection" xml:space="preserve">
+    <value>Device Inspection</value>
+  </data>
+  <data name="lblRoadSideInspection" xml:space="preserve">
+    <value>Road Side Inspection</value>
+  </data>
+  <data name="lblVehSubCat" xml:space="preserve">
+    <value>Sub-Category</value>
+  </data>
+  <data name="lblDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="lblEmission" xml:space="preserve">
+    <value>Emission</value>
+  </data>
+  <data name="lblWeight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="lblEmissionPerc" xml:space="preserve">
+    <value>Emission (%)</value>
+  </data>
+  <data name="lblFuelType" xml:space="preserve">
+    <value>Fuel Type</value>
+  </data>
+  <data name="lblGrossWeight" xml:space="preserve">
+    <value>Gross Weight</value>
+  </data>
+  <data name="lblHeight" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="lblLength" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="lblNoOfAxels" xml:space="preserve">
+    <value>No of Axels</value>
+  </data>
+  <data name="lblWidth" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="lblFail" xml:space="preserve">
+    <value>FAIL</value>
+  </data>
+  <data name="lblPass" xml:space="preserve">
+    <value>PASS</value>
+  </data>
+  <data name="ActualValue2" xml:space="preserve">
+    <value>Actual Value</value>
+  </data>
+  <data name="ErrorTelematicDefect" xml:space="preserve">
+    <value>Telematics Driver Defect Added</value>
+  </data>
+  <data name="lblSelectAlpr" xml:space="preserve">
+    <value>Select ALPR</value>
+  </data>
+  <data name="registrationExpiry" xml:space="preserve">
+    <value>Registration Expiry</value>
+  </data>
+</root>

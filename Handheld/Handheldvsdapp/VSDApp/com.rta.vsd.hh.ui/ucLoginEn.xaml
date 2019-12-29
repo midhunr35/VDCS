@@ -1,0 +1,181 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucLoginEn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"             
+             xmlns:wpfNameSpace="http://schemas.xceed.com/wpf/xaml/toolkit"
+              xmlns:properties="clr-namespace:VSDApp.Properties"
+             mc:Ignorable="d"  Loaded="UserControl_Loaded_1" 
+             xmlns:extToolkit="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+            Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Initialized="UserControl_Initialized_1" SizeChanged="UserControl_SizeChanged"
+             HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <extToolkit:BusyIndicator x:Name="busyIndicator" IsBusy="False"  >
+
+        <Grid x:Name="GridMain" Visibility="Visible" Background="#F1F1F1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="stckPanelUpperMain" Orientation="Horizontal" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">
+                <StackPanel x:Name="stackPanelUpperLeft" HorizontalAlignment="Center">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="5"/>
+                           
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="35"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblRtaApp" Content="{x:Static properties:Resources.RTAVSDApplication}" Margin="-5,0,0,0" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Style="{StaticResource LabelStyleLoginLarge}"/>
+                        <Label x:Name="lblRtaSelectLan" Content="{x:Static properties:Resources.SelectLanguage}" Margin="-5,0,0,0" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left"  Style="{StaticResource LabelStyleLoginSmall}"/>
+                        <ComboBox x:Name="cmbLanguageSelection" Grid.Row="5" Grid.Column="1" Width="345" Height="45" HorizontalAlignment="Left"  Style="{StaticResource cmbLoginSelctionLoginPage}" Foreground="Gray" SelectionChanged="cmbLanguageSelection_SelectionChanged" >
+                           
+                        </ComboBox>
+
+                    </Grid>
+                </StackPanel>
+                <StackPanel x:Name="stackPanelUpperRight">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="15"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="35"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lbl" Content="{x:Static properties:Resources.Fillintherequiredinformation}" HorizontalAlignment="Left" Margin="-5,5,0,0" Style="{StaticResource LabelStyleLoginSmall}" Grid.Row="1" Grid.Column="1" />
+                        <Popup x:Name="txtBoxUserNamePopup" Placement="Top"  PlacementTarget="{Binding ElementName=txtBoxUserName}" IsOpen="False">
+                            <TextBlock x:Name="PopupTextBlock" VerticalAlignment="Top" Background="#FF3334" Foreground="White"  FontSize="17">Hint: Username and Password is Key Sensitive</TextBlock>
+                        </Popup>
+                        <TextBox x:Name="txtBoxUserName"   Style="{StaticResource TextBoxLogin}" Grid.Row="3" Grid.Column="1"  VerticalContentAlignment="Center" Foreground="Gray"  HorizontalAlignment="Left" TextChanged="txtBoxUserName_TextChanged_1" GotFocus="txtBoxUserName_GotFocus_1"  LostFocus="txtBoxUserName_LostFocus_1"  MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="txtBoxUserName_PreviewKeyDown_1"/>
+                        <!--  <TextBox x:Name="txtBoxUserName" Padding="5"  Grid.Row="5" FontFamily="Arial Rounded MT" Grid.Column="3" FontSize="25" Width="350" Height="50" TextChanged="txtBoxUserName_TextChanged_1" GotFocus="txtBoxUserName_GotFocus_1"  LostFocus="txtBoxUserName_LostFocus_1" HorizontalContentAlignment="Center" MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="txtBoxUserName_PreviewKeyDown_1"/>-->
+                        <PasswordBox x:Name="txtpswd" PasswordChar="*"  Grid.Row="5" Foreground="Gray" Grid.Column="1" Style="{StaticResource TextBoxPassword}" HorizontalAlignment="Left" VerticalContentAlignment="Center" GotFocus="txtpswd_GotFocus"  LostFocus="txtpswd_LostFocus_1" MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="TextBlock_PreviewKeyDown_1"/>
+                       
+                        <!-- <PasswordBox x:Name="txtpswd" Padding="5" FontWeight="ExtraBold"  FontFamily="Segoe UI" Grid.Row="7" Grid.Column="3" Width="350" Height="50" FontSize="25"  PasswordChar="*" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" GotFocus="txtBoxUserName_GotFocus_1"  LostFocus="txtpswd_LostFocus_1" MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="TextBlock_PreviewKeyDown_1"/>-->
+                       
+                        <TextBlock x:Name="txtBlockForgotName" Visibility="Collapsed" TextDecorations="Underline"   Grid.Row="7" Grid.Column="1" FontFamily="Segoe UI" FontWeight="Medium" FontSize="17" HorizontalAlignment="Left">
+                <Hyperlink x:Name="hyperlinkForgotName" Click="hyperlinkForgotName_Click_1"   >
+                <TextBlock  Text="{x:Static properties:Resources.lblForgotUsername}"  Visibility="Collapsed" PreviewKeyDown="TextBlock_PreviewKeyDown_1" />
+                </Hyperlink>
+
+            </TextBlock>
+
+                        <Button x:Name="btnLogin"  Style="{StaticResource ButtonLoginPage}"  Content="{x:Static properties:Resources.BtnLogin}" Grid.Row="9" Grid.Column="1"  HorizontalAlignment="Left" Click="Button_Click" />
+
+                    </Grid>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="stckPanelUpperMain2"  Grid.Row="1" >
+                <Image Source="..\Images\login_landscape.jpg"    />
+            </StackPanel>
+            <Grid x:Name="maingrid" Visibility="Collapsed" >
+                <Grid.Background>
+                    <ImageBrush ImageSource="..\Images\background_New.png"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label x:Name="lblMessageBoxNotAuthorized" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Content="{x:Static properties:Resources.LblMessageBoxNotAuthorized}" FontSize="15" Visibility="Collapsed"/>
+                <Label x:Name="lblLoggingIn" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Content="{x:Static properties:Resources.lblLoggingIn}" FontSize="15" Visibility="Collapsed"/>
+
+                <Label  Content="{x:Static properties:Resources.SelectLanguage}" HorizontalAlignment="Left" HorizontalContentAlignment="Left"  Grid.Row="1" Grid.Column="3" FontWeight="Medium" FontFamily="Segoe UI"  FontSize="30" />
+
+
+                <TextBlock x:Name="txtBlockLanguageEng" TextDecorations="Underline"  Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25" HorizontalAlignment="Left">
+                <Hyperlink x:Name="hyperlinkEng" Click="Hyperlink_Click_1"  >English </Hyperlink>
+
+                </TextBlock>
+                <TextBlock x:Name="txtBlockLanguageArb" TextDecorations="Underline" Foreground="Blue"  Grid.Row="3" Grid.Column="3" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25" HorizontalAlignment="Right">
+                  <Hyperlink x:Name="hyperlinkArb" Click="Hyperlink_Click_2" >العربية </Hyperlink>
+                </TextBlock>
+
+
+                <Label x:Name="lblUsername" FontWeight="Medium"  FontFamily="Segoe UI"  FontSize="25"  HorizontalAlignment="Left" Grid.Row="5" Grid.Column="1" Content="{x:Static properties:Resources.UserName}" />
+                <Label FontFamily="Arabic Transparent" Visibility="Collapsed" FontSize="25"  HorizontalAlignment="Left" Grid.Row="5" Grid.Column="0" Content="{x:Static properties:Resources.UserName}" />
+                <!--  <TextBox x:Name="txtBoxUserName" Padding="5"  Grid.Row="5" FontFamily="Arial Rounded MT" Grid.Column="3" FontSize="25" Width="350" Height="50" TextChanged="txtBoxUserName_TextChanged_1" GotFocus="txtBoxUserName_GotFocus_1"  LostFocus="txtBoxUserName_LostFocus_1" HorizontalContentAlignment="Center" MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="txtBoxUserName_PreviewKeyDown_1"/>-->
+               
+
+                <Label  HorizontalAlignment="Left" FontWeight="Medium" Grid.Row="7" Grid.Column="1" Content="{x:Static properties:Resources.Password}" FontSize="25" FontFamily="Segoe UI" />
+                <Label Visibility="Collapsed"  HorizontalAlignment="Left" Grid.Row="7" Grid.Column="0" Content="{x:Static properties:Resources.Password}" FontSize="25" FontFamily="Arabic Transparent"/>
+                <!-- <PasswordBox x:Name="txtpswd" Padding="5" FontWeight="ExtraBold"  FontFamily="Segoe UI" Grid.Row="7" Grid.Column="3" Width="350" Height="50" FontSize="25"  PasswordChar="*" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" GotFocus="txtBoxUserName_GotFocus_1"  LostFocus="txtpswd_LostFocus_1" MouseDoubleClick="txtBoxUserName_MouseDoubleClick_1" PreviewKeyDown="TextBlock_PreviewKeyDown_1"/>-->
+
+
+
+                <!--
+                <TextBlock x:Name="txtBlockForgotName" TextDecorations="Underline"  Grid.Row="8" Grid.Column="3" FontFamily="Segoe UI" FontWeight="Medium" FontSize="17" HorizontalAlignment="Left">
+                <Hyperlink x:Name="hyperlinkForgotName" Click="hyperlinkForgotName_Click_1"  >
+                <TextBlock  Text="{x:Static properties:Resources.lblForgotUsername}" PreviewKeyDown="TextBlock_PreviewKeyDown_1" />
+                </Hyperlink>
+
+            </TextBlock>
+
+-->
+
+                <Image x:Name="imagebuttonetest2" Source="..\Images\Buttons\Large\Login.png" Width="350" Grid.Row="10"  Grid.Column="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebuttonetest2_MouseLeftButtonDown_1"  MouseLeftButtonUp="Button_Click"  />
+
+
+
+            </Grid>
+        </Grid>
+      
+
+    </extToolkit:BusyIndicator>
+</UserControl>

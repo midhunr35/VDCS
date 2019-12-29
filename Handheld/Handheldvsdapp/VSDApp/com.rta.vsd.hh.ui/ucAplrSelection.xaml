@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucAplrSelection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:properties="clr-namespace:VSDApp.Properties"
+             
+             Height="Auto" Width="Auto" Loaded="UserControl_Loaded"  >
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid DataContext="{Binding ElementName=root}" MouseLeftButtonUp="UserControl_MouseLeftButtonUp" >
+        <Border Background="#90000000"  Visibility="{Binding Visibility}" Margin="0,0,0,0">
+            <Grid>
+                <Grid x:Name="grdMain" Width="550" Height="150" Background="White" Margin="20,15,20,15" MouseLeftButtonUp="grdMain_MouseLeftButtonUp">
+                    <StackPanel Orientation="Vertical" Margin="10 20 10 10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <Label x:Name="lblSelectAplr" Content="{x:Static properties:Resources.lblSelectAlpr}" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+                            <ComboBox x:Name="cmboxAlprSelection"  Style="{StaticResource cmbLargeSizeForComplexScreens}" Margin="50 0 10 0" HorizontalAlignment="Right"  VerticalAlignment="Stretch" SelectionChanged="cmboxAlprSelection_SelectionChanged"/>
+                        </StackPanel>
+                        <Button x:Name="btnok"  Content="{x:Static properties:Resources.OK}" Margin="0,30,0,0" Width="130"  Style="{StaticResource ButtontoProceedHalfControl}"   HorizontalAlignment="Right"  Click="btnok_Click"/>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

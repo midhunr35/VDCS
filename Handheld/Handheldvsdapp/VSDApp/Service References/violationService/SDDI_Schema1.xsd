@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://com/rta/vsd/schema/SDDISchema" elementFormDefault="qualified" targetNamespace="http://com/rta/vsd/schema/SDDISchema" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Defect">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="code" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codePrefix" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="status" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="comment" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="category" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="type" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vehicleCategories" type="tns:ArrayVehicleCategories" />
+      <element minOccurs="0" maxOccurs="1" name="channel" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="extDefectCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoryCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="extCategoryCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoryName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoryNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoryDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoryDescriptionArabic" type="string" />
+      <element name="id" type="string" />
+      <element name="isDisabled" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleTest">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="testCentreCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testReferenceNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fee" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="date" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="result" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="defects" type="tns:ArrayDefects" />
+      <element minOccurs="0" maxOccurs="1" name="typeCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isFeeApplied" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="isFeeReported" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="status" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="transactionNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testCenterName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testCenterNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testCenterBranchName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testCenterBranchNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vehiclePlate" type="tns:VehiclePlate" />
+      <element minOccurs="0" maxOccurs="1" name="chassisNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="violationTicketCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="inspectionTime" type="dateTime" />
+    </sequence>
+  </complexType>
+  <complexType name="Violation">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="defects" type="tns:ArrayDefects" />
+      <element minOccurs="0" maxOccurs="1" name="testHistory" type="tns:ArrayTests" />
+      <element minOccurs="0" maxOccurs="1" name="statusCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="statusName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="statusNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ticketNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="provisionalTicketNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="severityLevel" type="tns:SeverityLevel" />
+      <element minOccurs="0" maxOccurs="1" name="testAttempts" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="testTypeName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testTypeNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="testTypeCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="reportedDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="dueDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="vehicleSuspensionDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="ownerSuspensionDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="vehRegBlockDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="comments" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="commentsArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fineAmount" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="penaltyAmount" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="blockedServices" type="tns:ArrayViolationBlockedService" />
+      <element minOccurs="1" maxOccurs="1" name="violationId" type="tns:ViolationId" />
+      <element minOccurs="0" maxOccurs="1" name="groundingGracePeriod" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Response">
+    <sequence>
+      <element name="code" type="string" />
+      <element name="message" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehiclePlate">
+    <sequence>
+      <element name="source" type="string" />
+      <element name="code" type="string" />
+      <element name="number" type="string" />
+      <element name="category" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="AuthHeader">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="userName" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleCategory">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="code" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="parentCategoryCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="recordType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="extCategoryCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="defectSeverityLevel" type="tns:SeverityLevel" />
+      <element name="isDisabled" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleOwner">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="vehicleOwnerType" type="tns:VehicleOwnerType" />
+      <element minOccurs="0" maxOccurs="1" name="extVehicleOwnerCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerAddress" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerAddressArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerEmail" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerMobile" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerLandline1" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ownerLandline2" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vehicleCount" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="parentTradeLicenseNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="trafficFileNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tradeLicenseNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tradeLicenseExpiry" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="activities" type="tns:ArrayOwnerActivities" />
+      <element minOccurs="0" maxOccurs="1" name="riskRating" type="tns:RiskRatingProfiling" />
+      <element minOccurs="0" maxOccurs="1" name="ownerContactDetail" type="tns:VehicleOwnerContactDetail" />
+      <element minOccurs="0" maxOccurs="1" name="vehicles" type="tns:ArrayVehicles" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleOwnerActivity">
+    <sequence>
+      <element name="extActivityCode" type="string" />
+      <element name="activityName" type="string" />
+      <element name="activityNameArabic" type="string" />
+      <element name="activityDescription" type="string" />
+      <element name="activityDescriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ArraySeverityLevels">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="severityLevel" type="tns:SeverityLevel" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayDefects">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="defect" type="tns:Defect" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayTests">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="violationTest" type="tns:VehicleTest" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayOwners">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="owner" type="tns:VehicleOwner" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayOwnerActivities">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="activity" type="tns:VehicleOwnerActivity" />
+    </sequence>
+  </complexType>
+  <complexType name="Vehicle">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="category" type="tns:VehicleCategory" />
+      <element minOccurs="0" maxOccurs="1" name="extVehicleCode" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="plateDetails" type="tns:VehiclePlate" />
+      <element minOccurs="1" maxOccurs="1" name="country" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="ownerTrafficFileNumber" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="chassisNumber" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="manufacturedYear" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="registrationExpiry" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="color" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="colorArabic" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="isActive" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="insurance" type="tns:VehicleInsurance" />
+      <element minOccurs="0" maxOccurs="1" name="manufacturer" type="tns:VehicleManufacturer" />
+      <element minOccurs="0" maxOccurs="1" name="riskRating" type="tns:RiskRatingProfiling" />
+      <element minOccurs="0" maxOccurs="1" name="driver" type="tns:VehicleDriver" />
+      <element minOccurs="0" maxOccurs="1" name="owner" type="tns:VehicleOwner" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayVehicles">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="vehicle" type="tns:Vehicle" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayViolations">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="violation" type="tns:Violation" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayVehicleCategories">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="vehicleCategory" type="tns:VehicleCategory" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleInsurance">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="companyName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="companyNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="policyNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="type" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="expiresOn" type="dateTime" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleManufacturer">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="model" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="modelArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Country">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="id" type="long" />
+      <element minOccurs="1" maxOccurs="1" name="parentCountryId" type="long" />
+      <element minOccurs="1" maxOccurs="1" name="recordType" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="nameArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Inspection">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="inspectorName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="inspectorNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="time" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="locationName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="locationNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="areaName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="areaNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="violation" type="tns:Violation" />
+      <element minOccurs="0" maxOccurs="1" name="channelPartInspectionCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="channelPartInspectionName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="channelPartInspectionNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="frontPlateConditionName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="frontPlateConditionNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="rearPlateConditionName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="rearPlateConditionNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isRegistrationExpired" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isPlateConfiscated" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plateConfiscatedReason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plateConfiscatedReasonArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isPlateReturned" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plateReturnedReason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plateReturnedReasonArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vehicle" type="tns:Vehicle" />
+      <element minOccurs="0" maxOccurs="1" name="inspectorEmployeeId" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleOwnerType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="ownerTypeCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="RiskRatingProfiling">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="riskRatingScore" type="float" />
+      <element name="trafficFileNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isOverridden" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenRatingValue" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenUserId" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenReason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenReasonArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingColor" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingDescriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleOwnerContactDetail">
+    <sequence>
+      <element name="name" type="string" />
+      <element name="nameArabic" type="string" />
+      <element name="landline" type="string" />
+      <element name="mobile" type="string" />
+      <element name="email" type="string" />
+      <element name="addressLine1" type="string" />
+      <element name="addressLine1Arabic" type="string" />
+      <element name="addressLine2" type="string" />
+      <element name="addressLine2Arabic" type="string" />
+      <element name="languageName" type="string" />
+      <element name="languageDescription" type="string" />
+      <element name="languageDescriptionArabic" type="string" />
+      <element name="isSmsNotificationEnabled" type="boolean" />
+      <element name="isEmailNotificationEnabled" type="boolean" />
+    </sequence>
+  </complexType>
+  <complexType name="SeverityLevel">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="value" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codePrefix" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="code" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="channel" type="tns:Channel" />
+      <element minOccurs="0" maxOccurs="1" name="fineAmount" type="tns:DefectFine" />
+      <element name="id" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ViolationBlockedService">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="blockTimeStamp" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="blockStatus" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="code" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockReason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="typeDescriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="isExternal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockCategoryCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockCategoryName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockCategoryNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockCategoryDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="blockCategoryDescriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayViolationBlockedService">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="blockedService" type="tns:ViolationBlockedService" />
+    </sequence>
+  </complexType>
+  <complexType name="VehicleDriver">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="gender" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="genderArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="licenseNumber" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="licenseIssueDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="licenseExpiryDate" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingDriver" type="tns:RiskRatingProfilingDriver" />
+    </sequence>
+  </complexType>
+  <complexType name="RiskRatingProfilingDriver">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="riskRatingScore" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="isOverridden" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenRatingValue" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenUserId" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenReason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="overriddenReasonArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingColor" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingNameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingDescription" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="riskRatingDescriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Channel">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="code" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="DefectFine">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="date" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nameArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="description" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descriptionArabic" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="reason" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="amount" type="float" />
+      <element minOccurs="0" maxOccurs="1" name="blackPoints" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="requireGrounding" type="boolean" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayInspections">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="inspection" type="tns:Inspection" />
+    </sequence>
+  </complexType>
+  <complexType name="ViolationId">
+    <sequence>
+      <element name="violationId" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayViolationIds">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="violationIds" type="tns:ViolationId" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayStrings">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="item" type="string" />
+    </sequence>
+  </complexType>
+</schema>

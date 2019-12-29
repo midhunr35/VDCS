@@ -1,0 +1,56 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VSDApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="VSDAppDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=|DataDirectory|\VSDAppDB.sdf&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlServerCe.4.0&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=|DataDirectory|\VSDAppDB.sdf</Value>
+    </Setting>
+    <Setting Name="violationImagesPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\RTA_VSD_IMAGES</Value>
+    </Setting>
+    <Setting Name="ImagesPerDefect" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="AppAutoLogOutTime" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="IntellegentTargetingGIS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://rtagis/SilverlightViewer/Viewer.html?Viewer=rtagis#</Value>
+    </Setting>
+    <Setting Name="telematicsDefectCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">20.1.1</Value>
+    </Setting>
+    <Setting Name="AlprCam01_Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AlprCam01</Value>
+    </Setting>
+    <Setting Name="AlprCam02_Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AlprCam02</Value>
+    </Setting>
+    <Setting Name="AlprCam_Timer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="HHLocation_Timer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="AlprCam02_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\9.164.162.208\TestShared</Value>
+    </Setting>
+    <Setting Name="VSDApp_ImpoundingScreen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.17.85.2/VSD/VehicleImpoundingSearch.action</Value>
+    </Setting>
+    <Setting Name="VSDApp_handHeldService_HandHeldSkervice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.17.85.2/HHService/HandHeldService</Value>
+    </Setting>
+    <Setting Name="AlprCam01_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\192.168.159.1\TestShared</Value>
+    </Setting>
+    <Setting Name="VSDApp_handHeldService_HandHeldService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.85.2/HHService/HandHeldService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,233 @@
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\DockableVsExample-noexe\DockableVsExample\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\New Device Dev+Dep\Development Backup\14th-April\VSDApp\Controls\obj\Debug\Controls.pdb
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\bin\Debug\Controls.dll
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\bin\Debug\Controls.pdb
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.g.resources
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.dll
+C:\Users\VSD\Desktop\HH Developmnt on Device\10-Nov-2015\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\Working Copy VDCS\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\VDCS(Khurram Code)\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\WorkingCopyAfterMerg\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Code Intigration With VDCS\2nd Merge-06-Jan-2016\Khurram\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\Working Copy\SIT Code\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\VDCS_Code_BackUp\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Wor)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\bin\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Themes\Generic.baml
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.g.resources
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VDCS(10-Aug-2015)\Production Work-08-March\Working Copy-05-April(Current Working)\SIT Code BackUp-13-Feb\After 2nd merge\Controls\obj\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\bin\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\bin\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Themes\Generic.baml
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.g.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work-08-March\WorkignCopyForLoging\New folder\Controls\obj\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\bin\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\bin\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Themes\Generic.baml
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls.g.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\WorkingCopy12thJune(working)\Controls\obj\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\bin\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\bin\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Themes\Generic.baml
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.g.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\MadeProdDeplymtnFromCurret(21-Dec)\Controls\obj\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\bin\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\bin\Debug\Controls.pdb
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Themes\Generic.baml
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.g.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.dll
+C:\Khurram's Data\Office Data\RTA New Development\VSDDS-SupportDev\Production Deployment Work\Production Work\CurrentlyWorkingOnProd(21-Dec)\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\bin\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\bin\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.g.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.dll
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Merge Activity\VSD\Controls\obj\Debug\Controls.pdb
+C:\Users\IBM_ADMIN\Desktop\New folder (4)\BackUp_16thMarch_BeforeUIWork\Working\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\bin\Debug\Controls.dll
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\bin\Debug\Controls.pdb
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.csprojResolveAssemblyReference.cache
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Themes\Generic.baml
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.g.resources
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.Properties.Resources.resources
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.dll
+C:\Users\midhun_rajeevan\GitHubClone\Latest_CodeNov\VDCS\Handheldvsdapp\Controls\obj\Debug\Controls.pdb

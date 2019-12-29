@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSDApp", "VSDApp\VSDApp.csproj", "{7B847244-F36D-42B8-93F0-4C8292E59287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{356016DD-D57D-459C-B484-D961A6A440DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSDIntrestedVehicleDeriverWinService", "VSDIntrestedVehicleDeriverWinService\VSDIntrestedVehicleDeriverWinService.csproj", "{7097AA73-294B-4FEE-97FE-CF7B63A53537}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B847244-F36D-42B8-93F0-4C8292E59287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B847244-F36D-42B8-93F0-4C8292E59287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B847244-F36D-42B8-93F0-4C8292E59287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B847244-F36D-42B8-93F0-4C8292E59287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356016DD-D57D-459C-B484-D961A6A440DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356016DD-D57D-459C-B484-D961A6A440DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356016DD-D57D-459C-B484-D961A6A440DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356016DD-D57D-459C-B484-D961A6A440DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7097AA73-294B-4FEE-97FE-CF7B63A53537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7097AA73-294B-4FEE-97FE-CF7B63A53537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7097AA73-294B-4FEE-97FE-CF7B63A53537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7097AA73-294B-4FEE-97FE-CF7B63A53537}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

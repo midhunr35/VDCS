@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucLocationSelectionEn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:properties="clr-namespace:VSDApp.Properties"
+             Height="Auto" Width="Auto" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="White"
+             VerticalAlignment="Stretch" VerticalContentAlignment="Stretch" Loaded="UserControl_Loaded_1" SizeChanged="UserControl_SizeChanged_1"
+             >
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid >
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+           
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblLocationDetail" Content="{x:Static properties:Resources.LocationDetails}" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="30" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Label x:Name="lblWouldYouLike" Content="{x:Static properties:Resources.lblWouldYouLike}"   FontSize="15" Visibility="Collapsed"/>
+        <Label x:Name="lblAppLogout" Content="{x:Static properties:Resources.lblAppLogout}"   FontSize="15" Visibility="Collapsed"/>
+        <Label x:Name="lblEmirate" Content="{x:Static properties:Resources.Emirates}"  Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxEmirates" Style="{StaticResource cmbLargeSize}" Grid.Row="3" Grid.Column="3"   HorizontalAlignment="Left"  VerticalAlignment="Center" HorizontalContentAlignment="Center"  SelectionChanged="cmboxEmirates_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxEmirates_PreviewKeyDown_1" KeyDown="cmboxEmirates_KeyDown_1"/>
+        <Label x:Name="lblArea" Content="{x:Static properties:Resources.Area}"  Grid.Row="5" Grid.Column="1" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxArea" Grid.Row="5" Grid.Column="3"  Style="{StaticResource cmbLargeSize}" HorizontalAlignment="Left"  VerticalAlignment="Center" HorizontalContentAlignment="Center" SelectionChanged="cmboxArea_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxEmirates_PreviewKeyDown_1" KeyDown="cmboxArea_KeyDown_1"/>
+        <Label x:Name="lblLoc" Content="{x:Static properties:Resources.Location}" Grid.Row="7" Grid.Column="1" FontFamily="Segoe UI" FontWeight="Medium" FontSize="25"/>
+        <ComboBox x:Name="cmboxLocation" Grid.Row="7" Grid.Column="3" Style="{StaticResource cmbLargeSize}" HorizontalAlignment="Left"  IsEditable="True" IsTextSearchEnabled="True" VerticalAlignment="Center" HorizontalContentAlignment="Center" SelectionChanged="cmboxLocation_SelectionChanged_1" GotFocus="txtBoxPlateNumber_GotFocus_1" LostFocus="txtBoxPlateNumber_LostFocus_1" MouseDoubleClick="txtBoxPlateNumber_GotFocus_1" PreviewKeyDown="cmboxLocation_PreviewKeyDown_2" KeyDown="cmboxLocation_KeyDown_1"/>
+        <ContentControl x:Name="ContentControlShowMap" Visibility="Collapsed" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2"  Width="Auto" Grid.RowSpan="11" />
+        <Image x:Name="imag_location" Grid.Row="1" Visibility="Collapsed" Grid.Column="5" Grid.ColumnSpan="2"  Width="Auto" Grid.RowSpan="11" />
+
+        <TextBox Grid.Column="5" FontSize="16" Foreground="White" Height="29" HorizontalAlignment="Left"  Name="tbLocation" Text="25.520581,-103.40607" Visibility="Collapsed" VerticalAlignment="Top" Width="168" BorderThickness="0">
+            <TextBox.Background>
+                <SolidColorBrush />
+            </TextBox.Background>
+        </TextBox>
+
+
+        <StackPanel x:Name="btnStackePanel" Grid.Row="9"  Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Center">
+            <Grid >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnback" Content="{x:Static properties:Resources.BtnBack}" Style="{StaticResource ButtonBackHalfControl}"   Margin="0 0 0 0" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left"   Click="btnback_Click_1" />
+                <Button x:Name="btnNext"  Content="{x:Static properties:Resources.Inspect}"     Style="{StaticResource ButtontoProceedHalfControl}" Grid.Row="0" Grid.Column="1"   FontSize="20" Click="btnNext_Click_1" Margin="8 0 0 0" HorizontalAlignment="Right" />
+                <Image x:Name="imagebtnback" Visibility="Collapsed"  Source="..\Images\Buttons\Small\Back.png" Width="140"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebtnback_MouseLeftButtonDown_1"  MouseLeftButtonUp="btnback_Click_1"  />
+                <Image x:Name="imagebtnNext" Visibility="Collapsed" Source="..\Images\Buttons\Small\Start Inspection.png" Width="140"     HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" MouseLeftButtonDown="imagebtnNext_MouseLeftButtonDown_1"  MouseLeftButtonUp="btnNext_Click_1"  />
+
+            </Grid>
+                   </StackPanel>
+    </Grid>
+
+</UserControl>

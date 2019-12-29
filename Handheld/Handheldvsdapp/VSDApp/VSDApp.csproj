@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B847244-F36D-42B8-93F0-4C8292E59287}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VSDApp</RootNamespace>
+    <AssemblyName>VSDApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>VSD Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectX.Capture">
+      <HintPath>..\..\CAM Testing\VSDApp\bin\Debug\DirectX.Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="DShowNET">
+      <HintPath>..\..\CAM Testing\VSDApp\bin\Debug\DShowNET.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\..\..\Users\IBM_ADMIN\Documents\Visual Studio 2012\Projects\log4net_tutorial_source\C# Example\Log4NetTest\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\device dll\New folder\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>..\..\..\device dll\New folder\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Kashif\VSDApp\VSDApp\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Toughbook_DotNET">
+      <HintPath>..\..\VSD(Kashif)\VSDApp\VSDApp\VSDApp\bin\Debug\Toughbook_DotNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\..\..\..\Development\BackUp-17th-May\VSDApp\bin\Debug\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Extended, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VSD(Kashif)\VSDApp\VSDApp\VSDApp\bin\Debug\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="ZebraBluetoothAdapter, Version=1.0.122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\ZebraBluetoothAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="ZSDK_API, Version=1.0.122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\ZSDK_API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="com.rta.vsd.hh.data\CarRentalAgency.cs" />
+    <Compile Include="com.rta.vsd.hh.data\User.cs" />
+    <Compile Include="com.rta.vsd.hh.db\DBAppLoginManager.cs" />
+    <Compile Include="com.rta.vsd.hh.db\DBBusinessRuleManager.cs" />
+    <Compile Include="com.rta.vsd.hh.db\DBConnectionManager.cs" />
+    <Compile Include="com.rta.vsd.hh.db\DBOfflineDataManager.cs" />
+    <Compile Include="com.rta.vsd.hh.db\IDBManager.cs" />
+    <Compile Include="com.rta.vsd.hh.encryption\DecryptionManager.cs" />
+    <Compile Include="com.rta.vsd.hh.encryption\EncryptionManager.cs" />
+    <Compile Include="com.rta.vsd.hh.encryption\IEncryptionDecryptionManager.cs" />
+    <Compile Include="com.rta.vsd.hh.gps\GPSLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.manager\DriverDetailManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\GPSLocationManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IDriverDetailManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IGPSLocation.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IInspectorsManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\InspectorsManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IOperatorProfile.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IUserAccountManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IVehicleProfile.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IViolation.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\IViolationHistory.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\OperatorProfileManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\UserAccountManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\VehicleProfileManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\ViolationHistoryManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\ViolationManager.cs" />
+    <Compile Include="com.rta.vsd.hh.ui\CameraWindow.xaml.cs">
+      <DependentUpon>CameraWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\CloseAdminPermission.xaml.cs">
+      <DependentUpon>CloseAdminPermission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\DefectSummaryScreen.xaml.cs">
+      <DependentUpon>DefectSummaryScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\NotificationWindow.xaml.cs">
+      <DependentUpon>NotificationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\PrintPreview.xaml.cs">
+      <DependentUpon>PrintPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucAplrSelection.xaml.cs">
+      <DependentUpon>ucAplrSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucCommentsDialog.xaml.cs">
+      <DependentUpon>ucCommentsDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucDefectAndViolationDetails.xaml.cs">
+      <DependentUpon>ucDefectAndViolationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucDeviceInpVioSummary.xaml.cs">
+      <DependentUpon>ucDeviceInpVioSummary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucDriverInspectionDefectScreen.xaml.cs">
+      <DependentUpon>ucDriverInspectionDefectScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucGoodByeScreen.xaml.cs">
+      <DependentUpon>ucGoodByeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucGoogleMap.xaml.cs">
+      <DependentUpon>ucGoogleMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucInspectionType.xaml.cs">
+      <DependentUpon>ucInspectionType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucInspectorsSummeryDialog.xaml.cs">
+      <DependentUpon>ucInspectorsSummeryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucIntelligentTarget.xaml.cs">
+      <DependentUpon>ucIntelligentTarget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucLandingScreenEn.xaml.cs">
+      <DependentUpon>ucLandingScreenEn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucLocationSelectionEn.xaml.cs">
+      <DependentUpon>ucLocationSelectionEn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucPrintSearchedViolationTicket.xaml.cs">
+      <DependentUpon>ucPrintSearchedViolationTicket.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucProfileManagment.xaml.cs">
+      <DependentUpon>ucProfileManagment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucRecordViolationNonUAEVehicle.xaml.cs">
+      <DependentUpon>ucRecordViolationNonUAEVehicle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucSearchedVehicleDetials.xaml.cs">
+      <DependentUpon>ucSearchedVehicleDetials.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucSearchOperatorProfile.xaml.cs">
+      <DependentUpon>ucSearchOperatorProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucSearchOptionScreen.xaml.cs">
+      <DependentUpon>ucSearchOptionScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucSearchVehicle.xaml.cs">
+      <DependentUpon>ucSearchVehicle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucSearchViolationListing.xaml.cs">
+      <DependentUpon>ucSearchViolationListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucTrafficFines.xaml.cs">
+      <DependentUpon>ucTrafficFines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucVehHistoryDialog.xaml.cs">
+      <DependentUpon>ucVehHistoryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucVehicleDetails.xaml.cs">
+      <DependentUpon>ucVehicleDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucVehicleProfileInspection.xaml.cs">
+      <DependentUpon>ucVehicleProfileInspection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucVehicleSelection.xaml.cs">
+      <DependentUpon>ucVehicleSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucViolationSummary.xaml.cs">
+      <DependentUpon>ucViolationSummary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucVSDPortalWPF.xaml.cs">
+      <DependentUpon>ucVSDPortalWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ucWellComeScreen.xaml.cs">
+      <DependentUpon>ucWellComeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.ui\ViewDefectImgs.xaml.cs">
+      <DependentUpon>ViewDefectImgs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.utilities\AlprTargetedVehicles.cs" />
+    <Compile Include="com.rta.vsd.hh.utilities\AutoLogOffHelper.cs" />
+    <Compile Include="com.rta.vsd.hh.utilities\CommonUtils.cs" />
+    <Compile Include="com.rta.vsd.hh.utilities\FormState.cs" />
+    <Compile Include="com.rta.vsd.validation\DriverInfoArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\DriverInfoEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\LocationArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\LocationEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\LoginArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\OperatorProfileInputArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\OperatorProfileInputEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\ProfileManagmentValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationDefectsInputValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationDefectsInputValidationAr.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationInputArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationInputEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationNonDubaiArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\RecordViolationNonDubaiEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\SearchedVehicleDetailsArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\SearchedVehicleDetailsEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\SearchVehicleInputArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\SearchVehicleInputEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\VehicleProfileInspectionArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\VehicleProfileInspectionEnValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\ViolationSeacrchArValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\ViolationSeacrchEnValidation.cs" />
+    <Compile Include="Core\WindowsSettings.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressDialog\ProgressDialog.xaml.cs">
+      <DependentUpon>ProgressDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressDialog\ProgressDialogResult.cs" />
+    <Compile Include="ProgressDialog\ProgressDialogSettings.cs" />
+    <Compile Include="Properties\Resources.en-US.Designer.cs">
+      <DependentUpon>Resources.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\Resources.ar-AE.Designer.cs">
+      <DependentUpon>Resources.ar-AE.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Service References\violationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\handHeldService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WPFMessageBoxControl\Commands\CommandReference.cs" />
+    <Compile Include="WPFMessageBoxControl\Commands\DelegateCommand.cs" />
+    <Compile Include="WPFMessageBoxControl\IconHelper.cs" />
+    <Compile Include="WPFMessageBoxControl\MessageBoxViewModel.cs" />
+    <Compile Include="WPFMessageBoxControl\WPFMessageBox.xaml.cs">
+      <DependentUpon>WPFMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFMessageBoxControl\WPFMessageBoxButtons.cs" />
+    <Compile Include="WPFMessageBoxControl\WPFMessageBoxImage.cs" />
+    <Compile Include="WPFMessageBoxControl\WPFMessageBoxResult.cs" />
+    <Page Include="com.rta.vsd.hh.ui\CameraWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\CloseAdminPermission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\DefectSummaryScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\NotificationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\PrintPreview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucAplrSelection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucCommentsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucDefectAndViolationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucDeviceInpVioSummary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucDriverInspectionDefectScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucGoodByeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucGoogleMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucInspectionType.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucInspectorsSummeryDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucIntelligentTarget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucLandingScreenEn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucLocationSelectionEn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucLoginEn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.data\Operator.cs" />
+    <Compile Include="com.rta.vsd.hh.data\Vehicle.cs" />
+    <Compile Include="com.rta.vsd.hh.data\Violation.cs" />
+    <Compile Include="com.rta.vsd.hh.db\DBDataLoadManager.cs" />
+    <Compile Include="com.rta.vsd.hh.db\IDBDataLoad.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\ILoginManager.cs" />
+    <Compile Include="com.rta.vsd.hh.manager\LoginManager.cs" />
+    <Compile Include="com.rta.vsd.hh.ui\ucLoginEn.xaml.cs">
+      <DependentUpon>ucLoginEn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="com.rta.vsd.hh.utilities\AppProperties.cs" />
+    <Compile Include="com.rta.vsd.validation\IValidation.cs" />
+    <Compile Include="com.rta.vsd.validation\LoginEnValidation.cs" />
+    <Page Include="com.rta.vsd.hh.ui\ucPrintSearchedViolationTicket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucProfileManagment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucRecordViolationNonUAEVehicle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucSearchedVehicleDetials.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucSearchOperatorProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucSearchOptionScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucSearchVehicle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucSearchViolationListing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucTrafficFines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucVehHistoryDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucVehicleDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucVehicleProfileInspection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucVehicleSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucViolationSummary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucVSDPortalWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ucWellComeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="com.rta.vsd.hh.ui\ViewDefectImgs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressDialog\ProgressDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFMessageBoxControl\WPFMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en-US.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ar-AE.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ar-AE.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Vehicle_Image\HeavyVeh_Image\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\violationService\SDDI_Schema1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\violationService\ViolationInformationService1.wsdl" />
+    <None Include="Service References\violationService\VSDApp.violationService.Inspection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\violationService\VSDApp.violationService.Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\getRentalAgencyOpenOffenseResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\goodbyeScreenResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\HandHeldService.wsdl" />
+    <None Include="Web References\handHeldService\InquireCompanyProfileResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\InquireDriverDetailsResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\inquireInspectorSummaryResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\InquireListOfInterestResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\InquireVehicleProfileResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\mockHandHeldServiceSOAP.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\handHeldService\mockHandHeldServiceSOAP0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\handHeldService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\handHeldService\rentalAgencyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\SubmitHandheldLocationResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\SubmitOfflineViolationResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\SubmitViolationResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\SynchronizeConfigDataResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\SynchronizeDefectAttachmentsResponseItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\handHeldService\userProfileCredentialResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\violationService\configuration91.svcinfo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\violationService\configuration.svcinfo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\violationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="RTA1 _Test.ico" />
+    <Resource Include="RTA2-New-Icon.ico" />
+    <Resource Include="VSD Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\violationService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{356016dd-d57d-459c-b484-d961a6a440df}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\Alert.png" />
+    <Resource Include="Images\ArabicNew.jpg" />
+    <Resource Include="Images\Background Faded.png" />
+    <Resource Include="Images\background.png" />
+    <Resource Include="Images\background_New.png" />
+    <Resource Include="Images\Button-Add-icon.png" />
+    <Resource Include="Images\Buttons\Add Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Add Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Add Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Back Arabic Down Large.png" />
+    <Resource Include="Images\Buttons\Arabic\back Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Back Arabic Up Large.png" />
+    <Resource Include="Images\Buttons\Arabic\back Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Login Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Login Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Next Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Next Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Print Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Print Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Reset Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Reset Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Search Arabic Down Large.png" />
+    <Resource Include="Images\Buttons\Arabic\Search Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Search Arabic Up Large.png" />
+    <Resource Include="Images\Buttons\Arabic\Search Arabic Up.png" />
+    <Resource Include="Images\Buttons\Arabic\Start Inspection Arabic Down.png" />
+    <Resource Include="Images\Buttons\Arabic\Start Inspection Arabic Up.png" />
+    <Resource Include="Images\Buttons\Back.png" />
+    <Resource Include="Images\Buttons\Large\Add Arabic Down.png" />
+    <Resource Include="Images\Buttons\Large\Add Arabic Up.png" />
+    <Resource Include="Images\Buttons\Large\Add Down.png" />
+    <Resource Include="Images\Buttons\Large\Add.png" />
+    <Resource Include="Images\Buttons\Large\Login Arabic Down.png" />
+    <Resource Include="Images\Buttons\Large\Login Arabic Up.png" />
+    <Resource Include="Images\Buttons\Large\Login Down.png" />
+    <Resource Include="Images\Buttons\Large\Login.png" />
+    <Resource Include="Images\Buttons\Large\Next Down.png" />
+    <Resource Include="Images\Buttons\Large\Next.png" />
+    <Resource Include="Images\Buttons\Large\Print Down.png" />
+    <Resource Include="Images\Buttons\Large\Print.png" />
+    <Resource Include="Images\Buttons\Large\Search Arabic Down Large.png" />
+    <Resource Include="Images\Buttons\Large\Search Arabic Up Large.png" />
+    <Resource Include="Images\Buttons\Large\Search Down.png" />
+    <Resource Include="Images\Buttons\Large\Search.png" />
+    <Resource Include="Images\Buttons\Large\SearchAr_Dimmed.png" />
+    <Resource Include="Images\Buttons\Large\Search_Dimmed.png" />
+    <Resource Include="Images\Buttons\Large\Start Inspection Down.png" />
+    <Resource Include="Images\Buttons\Large\Start Inspection.png" />
+    <Resource Include="Images\Buttons\Large\Submit Down.png" />
+    <Resource Include="Images\Buttons\Large\Submit.png" />
+    <Resource Include="Images\Buttons\Large\Synchronize Down.png" />
+    <Resource Include="Images\Buttons\Large\Synchronize.png" />
+    <Resource Include="Images\Buttons\Login Down.png" />
+    <Resource Include="Images\Buttons\Login Up.png" />
+    <Resource Include="Images\Buttons\Login.png" />
+    <Resource Include="Images\Buttons\Login2.png" />
+    <Resource Include="Images\Buttons\Login_New.png" />
+    <Resource Include="Images\Buttons\Menue\Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\dxb_police_logo.png" />
+    <Resource Include="Images\Buttons\Menue\English Down.png" />
+    <Resource Include="Images\Buttons\Menue\English Up.png" />
+    <Resource Include="Images\Buttons\Menue\Exit Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Exit Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Exit Down.png" />
+    <Resource Include="Images\Buttons\Menue\Exit Up.png" />
+    <Resource Include="Images\Buttons\Menue\Home Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Home Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Home Down.png" />
+    <Resource Include="Images\Buttons\Menue\Home Up.png" />
+    <Resource Include="Images\Buttons\Menue\Inspection Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Inspection Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Inspection English Down.png" />
+    <Resource Include="Images\Buttons\Menue\Inspection English Up.png" />
+    <Resource Include="Images\Buttons\Menue\IntellegentTarget.jpg" />
+    <Resource Include="Images\Buttons\Menue\KB Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\KB Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\KB Down.png" />
+    <Resource Include="Images\Buttons\Menue\KB Up.png" />
+    <Resource Include="Images\Buttons\Menue\Logout Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Logout Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Logout Down.png" />
+    <Resource Include="Images\Buttons\Menue\Logout Up.png" />
+    <Resource Include="Images\Buttons\Menue\Network_Connect.png" />
+    <Resource Include="Images\Buttons\Menue\Network_Disconnet.png" />
+    <Resource Include="Images\Buttons\Menue\Operator Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Operator Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Operator Down.png" />
+    <Resource Include="Images\Buttons\Menue\Operator Up.png" />
+    <Resource Include="Images\Buttons\Menue\Sync Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Sync Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Sync Down.png" />
+    <Resource Include="Images\Buttons\Menue\Sync Up.png" />
+    <Resource Include="Images\Buttons\Menue\Vehicle Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Vehicle Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Vehicle Down.png" />
+    <Resource Include="Images\Buttons\Menue\Vehicle Up.png" />
+    <Resource Include="Images\Buttons\Menue\Violation Arabic Down.png" />
+    <Resource Include="Images\Buttons\Menue\Violation Arabic Up.png" />
+    <Resource Include="Images\Buttons\Menue\Violation Down.png" />
+    <Resource Include="Images\Buttons\Menue\Violation Up.png" />
+    <Resource Include="Images\Buttons\Next.png" />
+    <Resource Include="Images\Buttons\Small\Add Down.png" />
+    <Resource Include="Images\Buttons\Small\Add.png" />
+    <Resource Include="Images\Buttons\Small\back Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\back Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Back Down.png" />
+    <Resource Include="Images\Buttons\Small\Back.png" />
+    <Resource Include="Images\Buttons\Small\Cancel Down.png" />
+    <Resource Include="Images\Buttons\Small\Cancel.png" />
+    <Resource Include="Images\Buttons\Small\Login Down.png" />
+    <Resource Include="Images\Buttons\Small\Login.png" />
+    <Resource Include="Images\Buttons\Small\Logout Down.png" />
+    <Resource Include="Images\Buttons\Small\Logout.png" />
+    <Resource Include="Images\Buttons\Small\Next Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\Next Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Next Down.png" />
+    <Resource Include="Images\Buttons\Small\Next.png" />
+    <Resource Include="Images\Buttons\Small\Print Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\Print Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Print Down.png" />
+    <Resource Include="Images\Buttons\Small\Print.png" />
+    <Resource Include="Images\Buttons\Small\Remove Down.png" />
+    <Resource Include="Images\Buttons\Small\Remove.png" />
+    <Resource Include="Images\Buttons\Small\Reset Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\Reset Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Reset Down.png" />
+    <Resource Include="Images\Buttons\Small\Reset.png" />
+    <Resource Include="Images\Buttons\Small\Search Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\Search Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Search Down.png" />
+    <Resource Include="Images\Buttons\Small\Search.png" />
+    <Resource Include="Images\Buttons\Small\Start Inspection Arabic Down.png" />
+    <Resource Include="Images\Buttons\Small\Start Inspection Arabic Up.png" />
+    <Resource Include="Images\Buttons\Small\Start Inspection Down.png" />
+    <Resource Include="Images\Buttons\Small\Start Inspection.png" />
+    <Resource Include="Images\Buttons\Small\Submit Down.png" />
+    <Resource Include="Images\Buttons\Small\Submit.png" />
+    <Resource Include="Images\Buttons\Small\Sync Down.png" />
+    <Resource Include="Images\Buttons\Small\Sync.png" />
+    <Resource Include="Images\Close_Button.png" />
+    <Resource Include="Images\Default.png" />
+    <Resource Include="Images\Error.png" />
+    <Resource Include="Images\GoogleLocationImages\Alhamriya-Daira.jpg" />
+    <Resource Include="Images\GoogleLocationImages\DafazDubai.jpg" />
+    <Resource Include="Images\GoogleLocationImages\UniveristyRoad.jpg" />
+    <Resource Include="Images\Help.png" />
+    <Resource Include="Images\Icons\Camera\Camera_Icon.png" />
+    <Resource Include="Images\Icons\Camera\Camera_Icon_Old.png" />
+    <Resource Include="Images\Icons\Camera\Cam_FlashOff.jpg" />
+    <Resource Include="Images\Icons\Camera\Cam_FlashOn.jpg" />
+    <Resource Include="Images\Icons\Camera\CaptureDown.png" />
+    <Resource Include="Images\Icons\Camera\CaptureDownAr.png" />
+    <Resource Include="Images\Icons\Camera\CaptureUp.png" />
+    <Resource Include="Images\Icons\Camera\CaptureUpAr.png" />
+    <Resource Include="Images\Icons\Camera\CloseDown.png" />
+    <Resource Include="Images\Icons\Camera\CloseDownAr.png" />
+    <Resource Include="Images\Icons\Camera\CloseUp.png" />
+    <Resource Include="Images\Icons\Camera\CloseUpAr.png" />
+    <Resource Include="Images\Icons\Camera\DeleteDown.png" />
+    <Resource Include="Images\Icons\Camera\DeleteDownAr.png" />
+    <Resource Include="Images\Icons\Camera\DeleteUp.png" />
+    <Resource Include="Images\Icons\Camera\DeleteUpAr.png" />
+    <Resource Include="Images\Icons\ChangeLanguage.jpg" />
+    <Resource Include="Images\Icons\deleteIcon.png" />
+    <Resource Include="Images\Icons\Exit.jpg" />
+    <Resource Include="Images\Icons\Hazard.png" />
+    <Resource Include="Images\Icons\HazardAr_Dimmed.png" />
+    <Resource Include="Images\Icons\Hazard_Ar.png" />
+    <Resource Include="Images\Icons\Hazard_Dimmed.png" />
+    <Resource Include="Images\Icons\Home-icon.png" />
+    <Resource Include="Images\Icons\logout.jpg" />
+    <Resource Include="Images\Icons\Next-icon.png" />
+    <Resource Include="Images\Icons\searchhistory.jpg" />
+    <Resource Include="Images\Icons\searchvehicle.jpg" />
+    <Resource Include="Images\Icons\synchronize.jpg" />
+    <Resource Include="Images\Icons\User.png" />
+    <Resource Include="Images\Icons\VSD Logo.png" />
+    <Resource Include="Images\Info.png" />
+    <Resource Include="Images\Inspectors\ahgarcia.png" />
+    <Resource Include="Images\Inspectors\ahgarcia_Arabic.png" />
+    <Resource Include="Images\Inspectors\ambadran.png" />
+    <Resource Include="Images\Inspectors\ambadran_Arabic.png" />
+    <Resource Include="Images\Inspectors\Bebars English.png" />
+    <Resource Include="Images\Inspectors\emahmed.png" />
+    <Resource Include="Images\Inspectors\emahmed_Arabic.png" />
+    <Resource Include="Images\Inspectors\falhammadi.png" />
+    <Resource Include="Images\Inspectors\falhammadi_Arabic.png" />
+    <Resource Include="Images\Inspectors\hialbedwawi.png" />
+    <Resource Include="Images\Inspectors\hialbedwawi_Arabic.png" />
+    <Resource Include="Images\Inspectors\jlrosales.png" />
+    <Resource Include="Images\Inspectors\jlrosales_Arabic.png" />
+    <Resource Include="Images\Inspectors\kaalbanna.png" />
+    <Resource Include="Images\Inspectors\kaalbanna_Arabic.png" />
+    <Resource Include="Images\Inspectors\mhbebars.png" />
+    <Resource Include="Images\Inspectors\mhbebars_Arabic.png" />
+    <Resource Include="Images\Inspectors\nanoori.png" />
+    <Resource Include="Images\Inspectors\nanoori_Arabic.png" />
+    <Resource Include="Images\Inspectors\nyalali.png" />
+    <Resource Include="Images\Inspectors\nyalali_Arabic.png" />
+    <Resource Include="Images\Inspectors\skalbulooshi.png" />
+    <Resource Include="Images\Inspectors\skalbulooshi_Arabic.png" />
+    <Resource Include="Images\Inspectors\ssanbbar.png" />
+    <Resource Include="Images\Inspectors\ssanbbar_Arabic.png" />
+    <Resource Include="Images\Inspectors\tahableh.png" />
+    <Resource Include="Images\Inspectors\tahableh_Arabic.png" />
+    <Resource Include="Images\Inspectors\vdcs_stgadmin01.png" />
+    <Resource Include="Images\Inspectors\vdcs_stgadmin01_Arabic.png" />
+    <Resource Include="Images\Inspectors\wclopez.png" />
+    <Resource Include="Images\Inspectors\wclopez_Arabic.png" />
+    <Resource Include="Images\Inspectors\yeahmed.png" />
+    <Resource Include="Images\Inspectors\yeahmed_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ahgarcia.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ahgarcia_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ambadran.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ambadran_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\emahmed.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\emahmed_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\falhammadi.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\falhammadi_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\hialbedwawi.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\hialbedwawi_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\jlrosales.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\jlrosales_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\kaalbanna.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\kaalbanna_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\mhbebars.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\mhbebars_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\nanoori.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\nanoori_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\nyalali.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\nyalali_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\skalbulooshi.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\skalbulooshi_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ssanbbar.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\ssanbbar_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\tahableh.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\tahableh_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\vdcs_stgadmin01.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\vdcs_stgadmin01_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\wclopez.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\wclopez_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\yeahmed.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\yeahmed_Arabic.png" />
+    <Resource Include="Images\OK.png" />
+    <Resource Include="Images\OVRR1.png" />
+    <Resource Include="Images\OVRR_G0.png" />
+    <Resource Include="Images\OVRR_G1.png" />
+    <Resource Include="Images\OVRR_G2.png" />
+    <Resource Include="Images\PrintPreviewFront.png" />
+    <Resource Include="Images\RTA-corporate-logo.png" />
+    <Resource Include="Images\RTA-Icon.png" />
+    <Resource Include="Images\RTA-Left.png" />
+    <Resource Include="Images\RTA-Right.png" />
+    <Resource Include="Images\RTA.png" />
+    <Resource Include="Images\RTA1 _Test.ico" />
+    <Resource Include="Images\RTA1 _Test.png" />
+    <Resource Include="Images\RTA1.png" />
+    <Resource Include="Images\RTA2 - Copy.png" />
+    <Resource Include="Images\RTA2-New-Icon.ico" />
+    <Resource Include="Images\RTA2-New-Icon.png" />
+    <Resource Include="Images\RTA2.png" />
+    <Resource Include="Images\RTA_ENG_Logo.png" />
+    <Resource Include="Images\rta_icon.png" />
+    <Resource Include="Images\RTA_New_Complete.png" />
+    <Resource Include="Images\RTA_Urdu_Logo.png" />
+    <Resource Include="Images\RTA_Urdu_OfflineAr_Logo.png" />
+    <Resource Include="Images\RTA_Urdu_OfflineEn_Logo.png" />
+    <Resource Include="Images\RTA_Urdu_OnlineAr_Logo.png" />
+    <Resource Include="Images\RTA_Urdu_OnlineEn_Logo.png" />
+    <Resource Include="Images\search.jpg" />
+    <Resource Include="Images\Vehicle.png" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_01.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_03.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_05.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_07.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_08.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_09.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_11.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_12.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_14.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_17.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_19.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_21.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_22.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_24.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_25.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_26.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_28.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_30.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_31.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_33.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_36.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_38.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_40.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_42.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_44.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BackLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BackLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BackLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BackLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Back_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Back_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BodyCondition.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_BodyCondition_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Break_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_EngineCompartment.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_EngineCompartment_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_FrontLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_FrontLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_FrontLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_FrontLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Front_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Front_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_ModifiedVehicle.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_ModifiedVehicle_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_RoadSafty.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_RoadSafty_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_StearingSuspension.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_StearingSuspension_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\bus_Wheel_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Bus_Image\spacer.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_01.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_02.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_03.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_05.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_07.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_09.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_10.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_12.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_13.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_14.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_16.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_18.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_20.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_22.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_24.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_25.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_26.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_28.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_29.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_30.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_32.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_34.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_35.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_36.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_38.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_40.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_42.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_44.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_46.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_48.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\Pickup_50.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BackLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BackLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BackLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BackLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Back_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Back_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BodyCondition.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_BodyCondition_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Break_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_EngineCompartment.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_EngineCompartment_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_FrontLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_FrontLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_FrontLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_FrontLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Front_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Front_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_ModifiedVehicle.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_ModifiedVehicle_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_RoadSafty.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_RoadSafty_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_StearingSuspension.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_StearingSuspension_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\pickup_Wheel_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Pickup_Image\spacer.gif" />
+    <Resource Include="Images\Vehicle_Image\spacer.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BackLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BackLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BackLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BackLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Back_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Back_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BodyCondition.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_BodyCondition_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_1.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_2.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_3.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_4.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_5.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_5_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_6.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Break_6_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_EngineCompartment.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_EngineCompartment_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_FrontLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_FrontLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_FrontLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_FrontLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Front_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Front_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_ModifiedVehicle.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_ModifiedVehicle_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_RoadSafty.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_RoadSafty_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_StearingSuspension.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_StearingSuspension_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_1.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_2.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_3.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_4.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_5.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_5_R.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_6.gif" />
+    <Resource Include="Images\Vehicle_Image\truck_Wheel_6_R.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_01.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_02.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_03.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_04.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_05.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_06.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_07.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_08.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_09.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_10.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_11.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_12.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_13.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_14.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_15.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_16.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_17.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_18.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_19.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_20.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_21.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_22.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_23.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_24.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_25.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_26.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_27.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_28.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_29.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_30.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_31.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_32.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_33.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_34.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_35.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_36.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_37.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_38.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_39.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_40.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_41.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_42.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_43.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_44.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_45.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_46.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_47.gif" />
+    <Resource Include="Images\Vehicle_Image\tst_48.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\spacer.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_01.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_03.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_05.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_07.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_08.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_09.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_11.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_12.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_13.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_15.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_17.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_18.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_20.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_22.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_23.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_25.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_26.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_27.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_29.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_30.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_31.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_33.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_35.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_36.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_38.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_41.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_43.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_44.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_46.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_48.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BackLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BackLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BackLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BackLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Back_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Back_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BodyCondition.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_BodyCondition_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Break_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_EngineCompartment.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_EngineCompartment_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_FrontLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_FrontLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_FrontLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_FrontLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Front_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Front_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_ModifiedVehicle.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_ModifiedVehicle_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_RoadSafty.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_RoadSafty_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_StearingSuspension.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_StearingSuspension_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_1.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_2.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_3.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_4.gif" />
+    <Resource Include="Images\Vehicle_Image\Van_Image\Van_Wheel_4_R.gif" />
+    <Resource Include="Images\VSD Icon.ico" />
+    <Resource Include="Images\VSD Logo.png" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_01.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_02.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_03.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_03_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_04.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_05.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_06.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_06_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_07.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_08.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_08_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_09.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_10.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_11.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_11_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_12.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_13.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_14.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_14_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_15.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_16.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_16_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_17.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_17_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_18.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_19.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_19_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_20.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_21.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_21_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_22.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_23.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_24.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_24_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_25.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_26.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_27.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_28.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_28_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_29.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_30.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_30_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_31.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_32.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_33.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_33_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_34.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_35.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_35_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_36.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_36_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_37.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_38.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_38_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_39.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_40.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_41.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_41_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_42.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_43.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_43_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_44.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_45.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_46.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_46_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyMach_Image\HeavyMachinary_47.gif" />
+    <Resource Include="Images\Icons\plus.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Inspection_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\intelligent_targeting.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\intelligent_targeting_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\knowledge.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\knowledge_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\logout.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\logout_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\my_profile.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\my_profile_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\operator_search.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\operator_search_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\sync.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\sync_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\vehicle_search.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\vehicle_search_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\violation.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\violation_mo.jpg" />
+    <Resource Include="Images\login_landscape.jpg" />
+    <Resource Include="Images\login_portrait.jpg" />
+    <Resource Include="Images\Icons\NewDesignIcons\menu.jpg" />
+    <Resource Include="Images\Icons\NewDesignIcons\menu_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\intelligent_targeting_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\intelligent_targeting_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\knowledge_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\knowledge_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\logout_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\logout_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\my_profile_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\my_profile_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\operator_search_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\operator_search_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\sync_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\sync_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\vehicle_search_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\vehicle_search_mo_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\violation_a.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\violation_mo_a.jpg" />
+    <Resource Include="Images\Icons\NewDesignIcons\Knowledge_Icon.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Logout_Icon.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Vehicle_Search_Icon.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Violation_Icone.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Intelligent_Targeting_Icon.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Operator_Search_icon.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Sync.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\menus_icon.gif" />
+    <Resource Include="Images\Inspectors\vsd.png" />
+    <Resource Include="Images\Inspectors\vsd_Arabic.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\vsd.png" />
+    <Resource Include="Images\Inspectors_Pic_Menue\vsd_Arabic.png" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_01.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_03.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_04.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_06.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_08.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_09.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_11.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_13.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_16.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_18.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_20.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_21.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_23.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_25.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_26.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_28.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_30.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_31.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_32.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_34.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_35.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_36.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_38.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_40.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_41.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_42.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_44.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_46.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_47.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_49.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_51.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_52.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_53.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_55.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_57.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_59.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\HeavyVeh_60.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BackLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BackLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BackLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BackLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Back_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Back_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BodyCondition.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_BodyCondition_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_1.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_2.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_3.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_4.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_5.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_5_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_6.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Break_6_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_EngineCompartment.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_EngineCompartment_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_FrontLight1.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_FrontLight1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_FrontLight2.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_FrontLight2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Front_PlateNo.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Front_PlateNo_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_ModifiedVehicle.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_ModifiedVehicle_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_RoadSafty.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_RoadSafty_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_StearingSuspension.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_StearingSuspension_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_1.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_1_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_2.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_2_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_3.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_3_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_4.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_4_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_5.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_5_R.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_6.gif" />
+    <Resource Include="Images\Vehicle_Image\HeavyVeh_Image\truck_Wheel_6_R.gif" />
+    <Resource Include="Images\Icons\NewDesignIcons\Impounding.png" />
+    <Resource Include="Images\Buttons\NewMenue\comercialActivity.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\comercialActivity_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\Device inspection.png" />
+    <Resource Include="Images\Buttons\NewMenue\Device inspection_a.png" />
+    <Resource Include="Images\Buttons\NewMenue\Device inspection_mo.png" />
+    <Resource Include="Images\Buttons\NewMenue\Device inspection_mo_a.png" />
+    <Resource Include="Images\Buttons\NewMenue\Devices Inspection.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_a.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_dvc.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_dvc_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\Inspection_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_mo.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_mo_a.png" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_rs.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\inspection_rs_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\intelligent_targeting.png" />
+    <Resource Include="Images\Buttons\NewMenue\Intelligent_Targeting_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\Knowledge_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\Logout_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\menu.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\menus_icon.gif" />
+    <Resource Include="Images\Buttons\NewMenue\menu_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\Operator_Search_icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\ProvisionalInspection.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\ProvisionalInspection_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\RecordInspection.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\RecordInspection_mo.jpg" />
+    <Resource Include="Images\Buttons\NewMenue\Sync.png" />
+    <Resource Include="Images\Buttons\NewMenue\Vehicle_Search_Icon.png" />
+    <Resource Include="Images\Buttons\NewMenue\Violation_Icone.png" />
+    <Resource Include="Images\Icons\NewDesignIcons\Devices Inspection.png" />
+    <Content Include="VSDAppDB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.17.85.6/HHService/HandHeldService/WEB-INF/wsdl/HandHeldService.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\handHeldService\</RelPath>
+      <UpdateFromURL>http://172.17.85.6/HHService/HandHeldService/WEB-INF/wsdl/HandHeldService.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VSDApp_handHeldService_HandHeldService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

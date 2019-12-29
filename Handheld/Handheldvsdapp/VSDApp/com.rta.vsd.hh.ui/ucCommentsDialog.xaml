@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Technewlogic.Samples.WpfModalDialog.ModalDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wpfx="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+    xmlns:properties="clr-namespace:VSDApp.Properties"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+   
+	x:Name="root"  Width="Auto" Height="Auto">
+
+    <Grid DataContext="{Binding ElementName=root}">
+        <Border Background="#90000000" Visibility="{Binding Visibility}" Margin="0,0,0,-184">
+            <StackPanel Width="250" Height="450" Orientation="Vertical">
+                <wpfx:CheckListBox x:Name="chkComments" Background="White" MinHeight="100"  FontFamily="Segoe UI" FontWeight="Bold" FontSize="20" CheckedChanged="chkComments_CheckedChanged"  />
+                <TextBox x:Name="txtComments" Height="100" Margin="0,5,0,0" FontFamily="Segoe UI" FontWeight="Bold" FontSize="12" MaxLength="85" SpellCheck.IsEnabled="True"  GotFocus="txtComments_GotFocus" MouseDoubleClick="txtComments_GotFocus" TextWrapping="Wrap" TextChanged="txtComments_TextChanged" />
+                <Popup x:Name="ComentsPopup" Placement="Top"  PlacementTarget="{Binding ElementName=txtActualValue}" IsOpen="False">
+                    <TextBlock x:Name="PopupTextBlock" Background="Wheat" FontSize="17">Hint: You Can Enter Only 85 Character</TextBlock>
+                </Popup>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,0">
+                    <Button x:Name="btnOk" FontFamily="Segoe UI" FontWeight="Medium" Background="Red" Foreground="White" Content="{x:Static properties:Resources.OK}" Click="OkButton_Click" Width="60" />
+                    <Button x:Name="btnCancel" FontFamily="Segoe UI" FontWeight="Medium" Background="Gray"  Foreground="White" Content="{x:Static properties:Resources.BtnCancel}" Click="CancelButton_Click"  Width="60" Margin="10,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!--</Border>-->
+    </Grid>
+
+</UserControl>

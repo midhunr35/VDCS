@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="VSDApp.com.rta.vsd.hh.ui.ucVehHistoryDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wpfx="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+    xmlns:properties="clr-namespace:VSDApp.Properties"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+   
+	x:Name="root"  Width="Auto" Height="Auto" >
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+        <Grid DataContext="{Binding ElementName=root}">
+        <Border Background="#90000000" Visibility="{Binding Visibility}" Margin="0,0,0,-184">
+            <StackPanel x:Name="stkPnlGrd" Width="auto" Height="auto" Orientation="Vertical">
+                <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <DataGrid x:Name="grdViolationDetails"  
+                        AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="False" 
+                        ScrollViewer.HorizontalScrollBarVisibility="auto"  ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible"
+                        ScrollViewer.CanContentScroll="True"  
+                         ItemsSource="{Binding violationData,UpdateSourceTrigger=PropertyChanged}" 
+                        FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Width="500" Height="400">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.ID}" IsReadOnly="False" Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Binding="{Binding ViolationID}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.IssueDate}"   IsReadOnly="False" Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Binding="{Binding IssueDate}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.Status}"  IsReadOnly="False"  Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Binding="{Binding ViolationStatus}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.Severity}"   IsReadOnly="False" Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium"  Binding="{Binding ViolationSeverity}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.PlateDetails}"  IsReadOnly="False" Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium"  Binding="{Binding VehicleDetail}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="{x:Static properties:Resources.ChassisNumber2}" IsReadOnly="False"  Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Binding="{Binding ChassisNumber}"></DataGridTextColumn>
+                            <DataGridTextColumn  Header="{x:Static properties:Resources.MenueOperatorProfile}" IsReadOnly="False" Width="Auto" FontSize="15" FontFamily="Segoe UI" FontWeight="Medium" Binding="{Binding OperatorDetail}"></DataGridTextColumn>
+
+                            <!--<DataGridTemplateColumn Header="{x:Static properties:Resources.BtnPrint}" IsReadOnly="True" Visibility="Visible">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="btnPrintRecipt" Content="{x:Static properties:Resources.BtnPrint}" Visibility="Visible"  Command="Delete"  FontSize="15" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,5,5,0">
+                   
+                    <Button x:Name="btnOk"  Content="{x:Static properties:Resources.BtnBack}" Style="{StaticResource ButtonBackHalfControl}" Height="35"  Margin="0,0,0,0" HorizontalAlignment="Right"  Click="OkButton_Click" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!--</Border>-->
+    </Grid>
+    </ScrollViewer>
+</UserControl>

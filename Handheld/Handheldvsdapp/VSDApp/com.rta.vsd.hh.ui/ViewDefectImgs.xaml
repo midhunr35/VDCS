@@ -1,0 +1,28 @@
+﻿<Window x:Class="VSDApp.com.rta.vsd.hh.ui.ViewDefectImgs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:properties="clr-namespace:VSDApp.Properties"
+        Title="Defect Image" Loaded="Window_Loaded" Height="500" Width="600" VerticalAlignment="Center" HorizontalAlignment="Center" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="Auto"  />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" >
+        <Image x:Name="btnDeletImg" Visibility="Collapsed" Source="..\Images\Icons\Camera\DeleteUp.png" ToolTip="{x:Static properties:Resources.Delete}" MouseLeftButtonUp="btnDeletImg_Click" />
+            <Button x:Name="btnExit" FontFamily="Segoe UI" FontWeight="Medium" Background="Gray"  Foreground="White" Content="{x:Static properties:Resources.btnDelete}"  Click="btnDeletImg_Click" Width="80" Margin="3,0,10,0" />
+            <Label x:Name="lblPathAndName"  Width="auto" FontWeight="Bold" Margin="10,0,3,0" />
+        </StackPanel>
+        <Image x:Name="imgShowDefect"  Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" />
+        <Button x:Name="btnPreviousImg" VerticalAlignment="Center"  Content="&lt;" Grid.Row="1" Grid.Column="0" Width="30" Height="100" Grid.RowSpan="2" Click="btnPreviousImg_Click" FontWeight="Bold" FontSize="40" />
+        <Button x:Name="btnNextImg" VerticalAlignment="Center"  Content="&gt;" Grid.Row="1" Grid.Column="2"  Width="30" Height="100"  Grid.RowSpan="2" Click="btnNextImg_Click"  FontWeight="Bold" FontSize="40"  />
+        
+    </Grid>
+</Window>
